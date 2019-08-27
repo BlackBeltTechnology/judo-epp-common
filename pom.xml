@@ -29,26 +29,10 @@
     
     <developers>
         <developer>
-            <id>borcsokj</id>
-            <name>Börcsök József</name>
-            <email>jozsef.borcsok@blackbelt.hu</email>
-            <url>https://github.com/borcsokj</url>
-            <organization>BlackBelt Technology</organization>
-            <organizationUrl>http://www.blackbelt.hu</organizationUrl>
-        </developer>
-        <developer>
             <id>robson</id>
             <name>Róbert Csákány</name>
             <email>robert.csakany@blackbelt.hu</email>
             <url>https://github.com/robertcsakany</url>
-            <organization>BlackBelt Technology</organization>
-            <organizationUrl>http://www.blackbelt.hu</organizationUrl>
-        </developer>
-        <developer>
-            <id>gprivi</id>
-            <name>Privitzky Gábor</name>
-            <email>gabor.privitzky@blackbelt.hu</email>
-            <url>https://github.com/gprivi</url>
             <organization>BlackBelt Technology</organization>
             <organizationUrl>http://www.blackbelt.hu</organizationUrl>
         </developer>
@@ -58,7 +42,7 @@
         <maven.version>3.1.1</maven.version>
         <tycho.version>1.4.0</tycho.version>
         <tycho.extras.version>${tycho.version}</tycho.extras.version>
-        <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-eclipse.git</tycho.scmUrl>
+        <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-epp-common.git</tycho.scmUrl>
         <cbi.version>1.1.5</cbi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -74,11 +58,7 @@
         <maven>${maven.version}</maven>
     </prerequisites>
     
-    <modules>
-        <module>common</module>
-        <module>common-feature</module>
-        <module>common-site</module>
-    </modules>
+    <!-- 
     <pluginRepositories>
         <pluginRepository>
             <id>eclipse-tycho</id>
@@ -89,7 +69,7 @@
             <url>https://repo.eclipse.org/content/groups/cbi/</url>
         </pluginRepository>
     </pluginRepositories>
-    
+    -->
     <repositories>
         <repository>
             <id>eclipse-release</id>
@@ -242,15 +222,13 @@
                      <optionalDependencies>ignore</optionalDependencies>
                      </dependency-resolution>
                      -->
-                    <!--
                     <target>
                         <artifact>
 						    <groupId>hu.blackbelt.judo.eclipse.epp</groupId>
-						    <artifactId>hu.blackbelt.judo.eclipse.epp-targetdefinition</artifactId>
+						    <artifactId>hu.blackbelt.judo.eclipse.epp.package.common.targetdefinition</artifactId>
                             <version>${project.version}</version>
                         </artifact>
                     </target>
-                    -->
                      <environments>
                         <environment>
                             <os>linux</os>
@@ -610,6 +588,7 @@
                 </property>
             </activation>
             <modules>
+                <module>common-targetdefinition</module>
                 <module>common</module>
                 <module>common-feature</module>
                 <module>common-site</module>
