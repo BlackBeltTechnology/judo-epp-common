@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description>
+      To install these features, point Eclipse at this site.
+   </description>
+   <feature id="hu.blackbelt.judo.eclipse.epp.package.common.feature">
+      <category name="epp-common"/>
+   </feature>
+   <category-def name="epp-common" label="Judo Common EPP">
+      <description>
+         Judo Common Eclipse Packaging Project
+      </description>
+   </category-def>
+
+</site>

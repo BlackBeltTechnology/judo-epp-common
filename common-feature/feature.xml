@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="hu.blackbelt.judo.eclipse.epp.package.common.feature"
+      label="Judo EPP Common Package Feature"
+      version="4.12.0.qualifier"
+      provider-name="Judo Eclipse Packaging Project"
+      license-feature="org.eclipse.license"
+      license-feature-version="0.0.0">
+
+   <description url="http://eclipse.org/epp">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.epp.logging.aeri.feature"/>
+      <!-- Bug 455645: Integrate Oomph into all EPP packages
+           https://bugs.eclipse.org/bugs/show_bug.cgi?id=455645 -->
+      <import feature="org.eclipse.oomph.setup"/>
+   </requires>
+
+   <plugin
+         id="hu.blackbelt.judo.eclipse.epp.package.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="true"/>
+
+</feature>
