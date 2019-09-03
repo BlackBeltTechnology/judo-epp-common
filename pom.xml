@@ -631,11 +631,11 @@
             <distributionManagement>
                 <snapshotRepository>
                     <id>dummy-distribution</id>
-                    <url>file:///tmp/maven-snapshot/</url>
+                    <url>file://${env.WERCKER_OUTPUT_DIR}/maven-snapshot/</url>
                 </snapshotRepository>
                 <repository>
                     <id>dummy-distribution</id>
-                    <url>file:///tmp/maven-release/</url>
+                    <url>file://${env.WERCKER_OUTPUT_DIR}/maven-release/</url>
                 </repository>
             </distributionManagement>
         </profile>

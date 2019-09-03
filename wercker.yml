@@ -41,7 +41,6 @@ build:
     - script:
       name: upload repository to nexus p2
       code: >-
-            apt-get update && apt-get install -y --no-install-recommends parallel && rm -rf /var/lib/apt/lists/*
             ./upload-respository-to-nexus.sh
             ${VERSION_FROM_POM_BASE_VERSION}.${VERSION_FROM_GIT_TAG_CURRENT_BRANCH_VALID_NAME}_${VERSION_FROM_GIT_TAG_FOR_GITFLOW} 
             https://nexus.blackbelt.cloud/repository/p2-judo/judo-epp-common 
@@ -156,7 +155,6 @@ release:
     - script:
       name: upload repository to nexus p2
       code: >-
-            apt-get update && apt-get install -y --no-install-recommends parallel && rm -rf /var/lib/apt/lists/*
             ./upload-respository-to-nexus.sh
             ${VERSION_FROM_POM_BASE_VERSION} 
             https://nexus.blackbelt.cloud/repository/p2-judo/judo-epp-common 
