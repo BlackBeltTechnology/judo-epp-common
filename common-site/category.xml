@@ -6,10 +6,10 @@
    <feature id="hu.blackbelt.judo.eclipse.epp.package.common.feature">
       <category name="epp-common"/>
    </feature>
+
    <category-def name="epp-common" label="Judo Common EPP">
       <description>
          Judo Common Eclipse Packaging Project
       </description>
    </category-def>
-
 </site>

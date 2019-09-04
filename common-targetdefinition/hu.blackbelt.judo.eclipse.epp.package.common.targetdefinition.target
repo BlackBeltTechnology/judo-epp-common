@@ -123,6 +123,10 @@
 		  <unit id="org.eclipse.sirius.specifier.properties.feature.source.feature.group" version="6.2.2.201907100713"/>
 		  <unit id="org.eclipse.sirius.specifier.source.feature.group" version="6.2.2.201907100713"/>
 	  </location>
+
+	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+		  <repository location="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/xpand/"/>
+	  </location>
 	  
 	  <!--
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
@@ -230,6 +234,8 @@
 		  <unit id="org.objectweb.asm.source" version="7.1.0.v20190412-2143"/>
 		  <unit id="org.objectweb.asm.tree" version="7.1.0.v20190412-2143"/>
 		  <unit id="org.objectweb.asm.tree.source" version="7.1.0.v20190412-2143"/>
+		  <unit id="org.eclipse.xtext.xbase.feature.group" version="2.18.0.v20190603-1516"/>
+		  <unit id="org.eclipse.xtext.xbase.lib.feature.group" version="2.18.0.v20190603-0732"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="http://download.eclipse.org/modeling/emft/mwe/updates/releases/2.11.0"/>
@@ -586,6 +592,11 @@
 	  </location>
 
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+		  <repository location="http://ianbrandt.github.io/m2e-maven-dependency-plugin"/>
+		  <unit id="com.ianbrandt.tools.m2e.mdp.feature.feature.group" version="0.0.4.201409291703"/>
+	  </location>
+
+	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="http://download.eclipse.org/emfatic/update"/>
 		  <unit id="org.eclipse.emf.emfatic.feature.group" version="0.8.0.201507261242"/>
 	  </location>
@@ -611,7 +622,6 @@
 		  <unit id="slf4j.api" version="1.7.22"/>
 		  <repository location="https://nexus.blackbelt.cloud/repository/p2-judo/p2-swagger/1.0.0"/>
 	  </location>
-
   </locations>
   <targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 </target>
