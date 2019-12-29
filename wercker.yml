@@ -28,6 +28,7 @@ build:
 
     - wercker/maven:
       goals: tycho-versions:update-eclipse-metadata
+      maven_opts: -Declipse.p2.mirrors=false
       cache_repo: true
       settings: .maven.xml
 
