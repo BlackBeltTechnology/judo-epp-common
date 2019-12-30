@@ -46,17 +46,12 @@ build:
       profiles: ${DEPLOY_PROFILES}
       cache_repo: true
 
-    - script:
-      name: upload repository to nexus p2
-      code: >-
-            ./upload-respository-to-nexus.sh
-            ${VERSION_NUMBER}
-            https://nexus.blackbelt.cloud/repository/p2-judo/judo-epp-common 
-            common-site/target/repository 
-            ${BLACKBELT_NEXUS_USERNAME} 
-            ${BLACKBELT_NEXUS_PASSWORD} 
-            20
-
+    - blackbelttechnology/parallel-upload@1.0.2:
+      url:      ${JUDONG_P2_UPSTREAM}/judo-epp-common/${VERSION_NUMBER}
+      path:     ${WERCKER_SOURCE_DIR}/common-site/target/repository
+      username: ${JUDONG_NEXUS_USERNAME}
+      password: ${JUDONG_NEXUS_PASSWORD}
+      proc:     "6"
 
 #  after-steps:
 #    - mbrevda/github-status:
