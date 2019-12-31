@@ -601,19 +601,19 @@
 	  </location>
 
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-		  <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.9.5"/>
-		  <unit id="com.fasterxml.jackson.core.jackson-core" version="2.9.5"/>
-		  <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.9.5"/>
-		  <unit id="com.fasterxml.jackson.dataformat.jackson-dataformat-yaml" version="2.9.5"/>
-		  <unit id="com.google.guava" version="20.0.0"/>
-		  <unit id="io.swagger.annotations" version="1.5.21"/>
-		  <unit id="io.swagger.core" version="1.5.21"/>
-		  <unit id="io.swagger.models" version="1.5.21"/>
+		  <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.9.10"/>
+		  <unit id="com.fasterxml.jackson.core.jackson-core" version="2.9.10"/>
+		  <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.9.10"/>
+		  <unit id="com.fasterxml.jackson.dataformat.jackson-dataformat-yaml" version="2.9.10"/>
+		  <unit id="com.google.guava" version="27.0.1.android"/>
+		  <unit id="io.swagger.annotations" version="1.5.24"/>
+		  <unit id="io.swagger.core" version="1.5.24"/>
+		  <unit id="io.swagger.models" version="1.5.24"/>
 		  <unit id="javax.validation.api" version="1.1.0.Final"/>
 		  <unit id="org.apache.commons.lang3" version="3.2.1"/>
-		  <unit id="org.yaml.snakeyaml" version="1.18.0"/>
+		  <unit id="org.yaml.snakeyaml" version="1.23.0"/>
 		  <unit id="slf4j.api" version="1.7.22"/>
-		  <repository location="https://nexus.blackbelt.cloud/repository/p2-judo/p2-swagger/1.0.0"/>
+		  <repository location="https://nexus.judo.technology/repository/p2/p2-swagger/1.0.1.20191227_184350_5d5e858_develop"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="http://download.eclipse.org/egit/updates"/>

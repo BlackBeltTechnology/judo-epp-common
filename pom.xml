@@ -48,7 +48,7 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>http://download.eclipse.org/releases/2019-06</eclipse.release.repository>
+        <eclipse.release.repository>http://download.eclipse.org/releases/2019-12</eclipse.release.repository>
         
         <project-shortname>judo-epp-common</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-epp-common</project-repositoryId>
