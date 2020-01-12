@@ -644,6 +644,12 @@
    <feature id="org.eclipse.xtext.xtext.ui.graph">
       <category name="xtext"/>
    </feature>
+   <feature id="net.mihai-nita.ansicon">
+      <category name="ansi_console"/>
+   </feature>
+   <feature id="net.mihai-nita.externalfilter">
+      <category name="ansi_console"/>
+   </feature>
    <category-def name="epp-common" label="Judo Common EPP">
       <description>
          Judo Common Eclipse Packaging Project
@@ -666,5 +672,5 @@
    <category-def name="sirius" label="sirius"/>
    <category-def name="xtext" label="XText"/>
    <category-def name="xtend" label="XText"/>
-
+   <category-def name="ansi_console" label="ANSIConsole"/>
 </site>
