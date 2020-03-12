@@ -617,17 +617,17 @@
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="http://download.eclipse.org/egit/updates"/>
-		  <unit id="org.eclipse.egit.feature.group" version="5.6.0.201912101111-r"/>
-		  <unit id="org.eclipse.egit.mylyn.feature.group" version="5.6.0.201912101111-r"/>
-		  <unit id="org.eclipse.egit.source.feature.group" version="5.6.0.201912101111-r"/>
-		  <unit id="org.eclipse.jgit.feature.group" version="5.6.0.201912101111-r"/>
-		  <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.6.0.201912101111-r"/>
-		  <unit id="org.eclipse.jgit.lfs.feature.group" version="5.6.0.201912101111-r"/>
-		  <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.egit.feature.group" version="5.6.1.202002131546-r"/>
+		  <unit id="org.eclipse.egit.mylyn.feature.group" version="5.6.1.202002131546-r"/>
+		  <unit id="org.eclipse.egit.source.feature.group" version="5.6.1.202002131546-r"/>
+		  <unit id="org.eclipse.jgit.feature.group" version="5.6.1.202002131546-r"/>
+		  <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.6.1.202002131546-r"/>
+		  <unit id="org.eclipse.jgit.lfs.feature.group" version="5.6.1.202002131546-r"/>
+		  <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.6.1.202002131546-r"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="http://www.mihai-nita.net/eclipse"/>
-		  <unit id="net.mihai-nita.ansicon.feature.group" version="1.3.5.201612301822"/>
+		  <unit id="net.mihai-nita.ansicon.feature.group" version="1.4.2.202002090224"/>
 		  <unit id="net.mihai-nita.externalfilter.feature.group" version="1.0.1.201612301822"/>
 	  </location>
   </locations>
