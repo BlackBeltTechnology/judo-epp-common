@@ -627,7 +627,7 @@
 	  </location>
 
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-		  <repository location="http://download.eclipse.org/emfatic/update"/>
+		  <repository location="http://download.eclipse.org/emfatic/update-18032020/"/>
 		  <unit id="org.eclipse.emf.emfatic.feature.group" version="0.8.0.201507261242"/>
 	  </location>
 
