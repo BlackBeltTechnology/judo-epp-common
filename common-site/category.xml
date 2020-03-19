@@ -9,9 +9,6 @@
    <feature id="com.ianbrandt.tools.m2e.mdp.feature">
       <category name="m2e"/>
    </feature>
-   <feature id="de.jcup.asciidoctor.converter">
-      <category name="asciidoctor"/>
-   </feature>
    <feature id="de.jcup.asciidoctoreditor">
       <category name="asciidoctor"/>
    </feature>
@@ -429,11 +426,6 @@
    <feature id="org.eclipse.license">
       <category name="eclipse"/>
    </feature>
-   <!--
-   <feature id="org.eclipse.linuxtools.changelog"/>
-   <feature id="org.eclipse.linuxtools.changelog.java"/>
-   <feature id="org.eclipse.linuxtools.changelog.source"/>
-   -->
    <feature id="org.eclipse.m2e.feature">
       <category name="m2e"/>
    </feature>
