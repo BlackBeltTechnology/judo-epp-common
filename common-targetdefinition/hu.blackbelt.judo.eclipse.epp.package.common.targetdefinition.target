@@ -230,22 +230,22 @@
 		  <unit id="org.eclipse.emf.sdk.feature.group" version="2.20.0.v20191028-0905"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-		  <repository location="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.20.0/"/>
-		  <unit id="org.eclipse.xtend.sdk.feature.group" version="2.20.0.v20191202-1256"/>
-		  <unit id="org.eclipse.xtext.sdk.feature.group" version="2.20.0.v20191202-1256"/>
+		  <repository location="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.22.0/"/>
+		  <unit id="org.eclipse.xtend.sdk.feature.group" version="2.22.0.v20200602-1533"/>
+		  <unit id="org.eclipse.xtext.sdk.feature.group" version="2.22.0.v20200602-1533"/>
 		  <unit id="org.junit" version="4.12.0.v201504281640"/>
 		  <unit id="org.junit.source" version="4.12.0.v201504281640"/>
-		  <unit id="org.objectweb.asm" version="7.2.0.v20191010-1910"/>
-		  <unit id="org.objectweb.asm.source" version="7.2.0.v20191010-1910"/>
-		  <unit id="org.objectweb.asm.tree" version="7.2.0.v20191010-1910"/>
-		  <unit id="org.objectweb.asm.tree.source" version="7.2.0.v20191010-1910"/>
-		  <unit id="org.eclipse.xtext.xbase.feature.group" version="2.20.0.v20191202-1256"/>
-		  <unit id="org.eclipse.xtext.xbase.lib.feature.group" version="2.20.0.v20191202-0910"/>
+		  <unit id="org.objectweb.asm" version="8.0.1.v20200420-1007"/>
+		  <unit id="org.objectweb.asm.source" version="8.0.1.v20200420-1007"/>
+		  <unit id="org.objectweb.asm.tree" version="8.0.1.v20200420-1007"/>
+		  <unit id="org.objectweb.asm.tree.source" version="8.0.1.v20200420-1007"/>
+		  <unit id="org.eclipse.xtext.xbase.feature.group" version="2.22.0.v20200602-1533"/>
+		  <unit id="org.eclipse.xtext.xbase.lib.feature.group" version="2.22.0.v20200602-0715"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-		  <repository location="https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.11.1"/>
-		  <unit id="org.eclipse.emf.mwe.sdk.feature.group" version="1.5.1.v20191121-1148"/>
-		  <unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.11.1.v20191121-1148"/>
+		  <repository location="https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.11.3"/>
+		  <unit id="org.eclipse.emf.mwe.sdk.feature.group" version="1.5.3.v20200520-0756"/>
+		  <unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.11.3.v20200520-0756"/>
 	  </location>
 
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
