@@ -42,6 +42,18 @@
 		  <unit id="org.eclipse.mat.chart.feature.feature.group" version="1.9.1.201908260659"/>
 		  <unit id="org.eclipse.mat.feature.feature.group" version="1.9.1.201908260659"/>		  
 		  <unit id="org.eclipse.emf.ecoretools.sdk.feature.group" version="3.3.2.201909230743"/>
+		  <unit id="org.eclipse.egit.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.egit.mylyn.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.emf.compare.diagram.sirius.feature.group" version="3.3.9.201911051515"/>
+		  <unit id="org.eclipse.emf.compare.egit.feature.group" version="3.3.9.201911051515"/>
+		  <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.9.201911051515"/>
+		  <unit id="org.eclipse.emf.compare.uml2.feature.group" version="3.3.9.201911051515"/>
+		  <unit id="org.eclipse.jgit.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.jgit.lfs.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.6.0.201912101111-r"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="https://download.eclipse.org/epsilon/updates/1.5/"/>
@@ -650,16 +662,21 @@
 		  <unit id="org.yaml.snakeyaml" version="1.23.0"/>
 		  <repository location="https://nexus.judo.technology/repository/p2/p2-swagger/1.0.1.20191227_184350_5d5e858_develop"/>
 	  </location>
+	  <!--
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="https://download.eclipse.org/egit/updates"/>
-		  <unit id="org.eclipse.egit.feature.group" version="5.7.0.202003110725-r"/>
-		  <unit id="org.eclipse.egit.mylyn.feature.group" version="5.7.0.202003110725-r"/>
-		  <unit id="org.eclipse.egit.source.feature.group" version="5.7.0.202003110725-r"/>
-		  <unit id="org.eclipse.jgit.feature.group" version="5.7.0.202003110725-r"/>
-		  <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.7.0.202003110725-r"/>
-		  <unit id="org.eclipse.jgit.lfs.feature.group" version="5.7.0.202003110725-r"/>
-		  <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.7.0.202003110725-r"/>
+		  <unit id="org.eclipse.egit.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.egit.source.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.lfs.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.pgm.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.source.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.8.0.202006091008-r"/>
+		  <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="5.8.0.202006091008-r"/>
 	  </location>
+	  -->
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="http://www.mihai-nita.net/eclipse"/>
 		  <unit id="net.mihai-nita.ansicon.feature.group" version="1.4.2.202002090224"/>
