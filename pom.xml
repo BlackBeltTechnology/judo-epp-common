@@ -48,7 +48,7 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>http://download.eclipse.org/releases/2019-12</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2019-12</eclipse.release.repository>
         
         <project-shortname>judo-epp-common</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-epp-common</project-repositoryId>
@@ -79,31 +79,31 @@
 
         <repository>
             <id>license-feature</id>
-            <url>http://download.eclipse.org/cbi/updates/license/</url>
+            <url>https://download.eclipse.org/cbi/updates/license/</url>
             <layout>p2</layout>
         </repository>
 <!--
         <repository>
             <id>emfatic</id>
-            <url>http://download.eclipse.org/emfatic/update</url>
+            <url>https://download.eclipse.org/emfatic/update</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>epsilon</id>
-            <url>http://download.eclipse.org/epsilon/updates</url>
+            <url>https://download.eclipse.org/epsilon/updates</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>m2e</id>
-            <url>http://download.eclipse.org/technology/m2e/releases/1.11</url>
+            <url>https://download.eclipse.org/technology/m2e/releases/1.11</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>sirius</id>
-            <url>http://download.eclipse.org/sirius/updates/releases/6.1.2/photon</url>
+            <url>https://download.eclipse.org/sirius/updates/releases/6.1.2/photon</url>
             <layout>p2</layout>
         </repository>
 
@@ -121,25 +121,25 @@
         
         <repository>
             <id>xtext</id>
-            <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.17.0/</url>
+            <url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.17.0/</url>
             <layout>p2</layout>
         </repository>
         
         <repository>
             <id>emf</id>
-            <url>http://download.eclipse.org/modeling/emf/emf/builds/release/2.17/</url>
+            <url>https://download.eclipse.org/modeling/emf/emf/builds/release/2.17/</url>
             <layout>p2</layout>
         </repository>
         
         <repository>
             <id>mwe2</id>
-            <url>http://download.eclipse.org/modeling/emft/mwe/updates/releases/2.10.0/</url>
+            <url>https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.10.0/</url>
             <layout>p2</layout>
         </repository>
         
         <repository>
             <id>xpand</id>
-            <url>http://download.eclipse.org/modeling/m2t/xpand/updates/releases/R201605260315</url>
+            <url>https://download.eclipse.org/modeling/m2t/xpand/updates/releases/R201605260315</url>
             <layout>p2</layout>
         </repository>
         
