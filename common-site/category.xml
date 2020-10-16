@@ -642,6 +642,12 @@
    <feature id="net.mihai-nita.externalfilter">
       <category name="ansi_console"/>
    </feature>
+   <feature id="org.eclipse.equinox.server.jetty">
+      <category name="http"/>
+   </feature>
+   <feature id="org.eclipse.equinox.serverside.sdk">
+      <category name="http"/>
+   </feature>
    <category-def name="epp-common" label="Judo Common EPP">
       <description>
          Judo Common Eclipse Packaging Project
@@ -665,4 +671,5 @@
    <category-def name="xtext" label="XText"/>
    <category-def name="xtend" label="XText"/>
    <category-def name="ansi_console" label="ANSIConsole"/>
+   <category-def name="http" label="New Category 1"/>
 </site>

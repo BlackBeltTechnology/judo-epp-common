@@ -54,6 +54,8 @@
 		  <unit id="org.eclipse.jgit.lfs.feature.group" version="5.6.0.201912101111-r"/>
 		  <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.6.0.201912101111-r"/>
 		  <unit id="org.eclipse.mylyn.github.feature.feature.group" version="5.6.0.201912101111-r"/>
+		  <unit id="org.eclipse.equinox.server.jetty.feature.group" version="1.10.100.v20191122-1941"/>
+		  <unit id="org.eclipse.equinox.serverside.sdk.feature.group" version="3.19.100.v20191122-2104"/>
 	  </location>
 	  <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 		  <repository location="https://download.eclipse.org/epsilon/updates/1.5/"/>
