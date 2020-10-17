@@ -2,7 +2,7 @@
 <feature
       id="hu.blackbelt.judo.eclipse.epp.package.common.feature"
       label="Judo EPP Common Package Feature"
-      version="4.14.0.qualifier"
+      version="4.17.0.qualifier"
       provider-name="Judo Eclipse Packaging Project"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
