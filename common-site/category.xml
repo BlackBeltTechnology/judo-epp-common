@@ -648,6 +648,14 @@
    <feature id="org.eclipse.equinox.serverside.sdk">
       <category name="http"/>
    </feature>
+   <feature id="com.make.chromium.cef.feature">
+      <category name="chromium"/>
+   </feature>
+<!--   <feature id="org.eclipse.swt.chromium.feature" os="linux,macosx,win32" ws="cocoa,gtk,win32" arch="x86_64"> -->
+   <feature id="org.eclipse.swt.chromium.feature">
+
+      <category name="chromium"/>
+   </feature>
    <category-def name="epp-common" label="Judo Common EPP">
       <description>
          Judo Common Eclipse Packaging Project
@@ -672,4 +680,5 @@
    <category-def name="xtend" label="XText"/>
    <category-def name="ansi_console" label="ANSIConsole"/>
    <category-def name="http" label="New Category 1"/>
+   <category-def name="chromium" label="chromium"/>
 </site>
