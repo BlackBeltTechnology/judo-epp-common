@@ -545,7 +545,7 @@
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://www.codetogether.com/updates/ci/"/>
-      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="3.2.0.202101272043"/>
+      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.0.1.202104081007"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20201130205003/repository"/>
