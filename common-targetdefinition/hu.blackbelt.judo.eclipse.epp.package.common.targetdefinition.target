@@ -80,8 +80,8 @@
       <unit id="javax.servlet.source" version="3.1.0.v201410161800"/>
       <unit id="net.i2p.crypto.eddsa" version="0.3.0.v20181102-1323"/>
       <unit id="net.i2p.crypto.eddsa.source" version="0.3.0.v20181102-1323"/>
-      <unit id="org.apache.ant" version="1.10.9.v20201106-1946"/>
-      <unit id="org.apache.ant.source" version="1.10.9.v20201106-1946"/>
+      <unit id="org.apache.ant" version="1.10.10.v20210426-1926"/>
+      <unit id="org.apache.ant.source" version="1.10.10.v20210426-1926"/>
       <unit id="org.apache.commons.codec" version="1.14.0.v20200818-1422"/>
       <unit id="org.apache.commons.codec.source" version="1.14.0.v20200818-1422"/>
       <unit id="org.apache.commons.compress" version="1.19.0.v20200106-2343"/>
@@ -104,18 +104,18 @@
       <unit id="org.bouncycastle.bcpkix.source" version="1.65.0.v20200527-1955"/>
       <unit id="org.bouncycastle.bcprov" version="1.65.1.v20200529-1514"/>
       <unit id="org.bouncycastle.bcprov.source" version="1.65.1.v20200529-1514"/>
-      <unit id="org.eclipse.egit.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.egit.source.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.lfs.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.pgm.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.source.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.11.0.202103091610-r"/>
-      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="5.11.0.202103091610-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.egit.mylyn.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.egit.source.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.http.apache.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.lfs.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.pgm.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.source.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="5.12.0.202106070339-r"/>
+      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="5.12.0.202106070339-r"/>
       <unit id="org.kohsuke.args4j" version="2.33.0.v20160323-2218"/>
       <unit id="org.kohsuke.args4j.source" version="2.33.0.v20160323-2218"/>
       <unit id="org.slf4j.api" version="1.7.30.v20200204-2150"/>
@@ -495,8 +495,8 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://dl.bintray.com/de-jcup/asciidoctoreditor"/>
-      <unit id="de.jcup.asciidoctoreditor.feature.group" version="2.2.0"/>
+      <repository location="https://de-jcup.github.io/update-site-eclipse-asciidoctor-editor/update-site/"/>
+      <unit id="de.jcup.asciidoctoreditor.feature.group" version="2.4.1"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
@@ -539,13 +539,13 @@
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://www.genuitec.com/updates/devstyle/ci/"/>
-      <unit id="com.genuitec.eclipse.theming.core.feature.feature.group" version="1.11.0.202103191838"/>
-      <unit id="com.genuitec.eclipse.theming.designer.feature.feature.group" version="1.11.0.202103191838"/>
-      <unit id="com.genuitec.eclipse.theming.feature.feature.group" version="1.11.0.202103191838"/>
+      <unit id="com.genuitec.eclipse.theming.core.feature.feature.group" version="1.11.0.202105260439"/>
+      <unit id="com.genuitec.eclipse.theming.designer.feature.feature.group" version="1.11.0.202105260439"/>
+      <unit id="com.genuitec.eclipse.theming.feature.feature.group" version="1.11.0.202105260439"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://www.codetogether.com/updates/ci/"/>
-      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.0.1.202104081007"/>
+      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.1.0.202106292010"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20201130205003/repository"/>
