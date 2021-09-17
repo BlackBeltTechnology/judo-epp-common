@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
-<target includeMode="feature" name="hu.blackbelt.judo.eclipse.epp.package.common.targetdefinition.target" sequenceNumber="1602971833023">
+<target includeMode="feature" name="hu.blackbelt.judo.eclipse.epp.package.common.targetdefinition.target" sequenceNumber="1602971833024">
   <locations>
       <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/cbi/updates/license"/>
@@ -67,7 +67,7 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/egit/updates/"/>
+      <repository location="https://download.eclipse.org/egit/updates-5.12/"/>
       <unit id="com.google.gson" version="2.8.6.v20201231-1626"/>
       <unit id="com.google.gson.source" version="2.8.6.v20201231-1626"/>
       <unit id="com.jcraft.jsch" version="0.1.55.v20190404-1902"/>
@@ -545,7 +545,7 @@
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://www.codetogether.com/updates/ci/"/>
-      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.1.0.202106292010"/>
+      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.1.3.202108191629"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20201130205003/repository"/>
