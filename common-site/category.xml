@@ -999,6 +999,7 @@
    <feature id="org.eclipse.xsd.source">
       <category name="eclipse"/>
    </feature>
+<!--
    <feature id="com.genuitec.eclipse.base.feature">
       <category name="genuitec"/>
    </feature>
@@ -1020,6 +1021,7 @@
    <feature id="com.genuitec.eclipse.theming.feature">
       <category name="genuitec"/>
    </feature>
+-->
    <feature id="org.eclipse.equinox.compendium.sdk">
       <category name="http"/>
    </feature>
