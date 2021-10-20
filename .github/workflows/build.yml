@@ -135,8 +135,8 @@ jobs:
 
       - name: Release P2 (parallel uoload)
         run: |-
-          export BASE_URL=https://nexus.judo.technology/repository/p2-judong/judo-epp-common/${VERSION_NUMBER}
-          export REPOSITORY_DIR=/common-site/target/repository
+          export BASE_URL=https://nexus.judo.technology/repository/p2-judong/judo-epp-common/${{ steps.version.outputs.version }}
+          export REPOSITORY_DIR=./common-site/target/repository
           export USERNAME=${{ secrets.JUDONG_NEXUS_USERNAME }}
           export PASSWORD=${{ secrets.JUDONG_NEXUS_PASSWORD }}
           export NUM_OF_PROC=6
