@@ -147,7 +147,7 @@ jobs:
               --silent \
               --output /dev/null \
               --user "$USERNAME:$PASSWORD" \
-              --upload-file $REPOSITORY_DIR$/1 $BASE_URL$/1
+              --upload-file $REPOSITORY_DIR$1 $BASE_URL$1
           }
           export -f callUpload
 
