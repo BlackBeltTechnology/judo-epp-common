@@ -129,32 +129,35 @@
     
     
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/epsilon/updates/2.2/"/>
-      <unit id="org.eclipse.epsilon.core.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.core.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.csv.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.csv.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.graphml.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.spreadsheets.excel.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.spreadsheets.excel.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.spreadsheets.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.spreadsheets.google.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emc.spreadsheets.google.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emf.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.emf.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.eunit.dt.emf.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.evl.emf.validation.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.ewl.emf.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.ewl.gmf.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.flexmi.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.flexmi.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.hutn.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.hutn.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.picto.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.simulink.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.simulink.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.uml.dt.feature.feature.group" version="2.2.0.202009032353"/>
-      <unit id="org.eclipse.epsilon.uml.feature.feature.group" version="2.2.0.202009032353"/>
+      <repository location="https://download.eclipse.org/epsilon/updates/2.3/"/>
+      <unit id="org.eclipse.epsilon.core.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.core.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.csv.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.csv.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.graphml.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.spreadsheets.excel.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.spreadsheets.excel.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.spreadsheets.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.spreadsheets.google.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emc.spreadsheets.google.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emf.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.emf.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.eunit.dt.emf.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.evl.emf.validation.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.ewl.emf.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.ewl.gmf.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.flexmi.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.flexmi.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.hutn.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.hutn.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.picto.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.simulink.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.simulink.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.uml.dt.feature.feature.group" version="2.3.0.202104221823"/>
+      <unit id="org.eclipse.epsilon.uml.feature.feature.group" version="2.3.0.202104221823"/>
+	    <unit id="org.eclipse.epsilon.emc.html.dt.feature.feature.group" version="2.3.0.202104221823"/>
+	    <unit id="org.eclipse.epsilon.emc.html.feature.feature.group" version="2.3.0.202104221823"/>
+	    <unit id="org.eclipse.epsilon.eugenia.feature.feature.group" version="2.3.0.202104221823"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/sirius/updates/releases/6.4.2/2020-09/"/>
@@ -313,6 +316,7 @@
 <!--      <unit id="org.eclipse.emf.ecoretools.explorer.contextual.feature.group" version="3.3.3.202010261352"/> -->
       <unit id="org.eclipse.emf.ecoretools.sdk.feature.group" version="3.3.3.202010261352"/>
     </location>
+    <!--
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://www.genuitec.com/updates/devstyle/ci/"/>
       <unit id="com.genuitec.eclipse.theming.core.feature.feature.group" version="1.11.0.202105260439"/>
@@ -323,7 +327,7 @@
       <repository location="https://www.codetogether.com/updates/ci/"/>
       <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.2.0.202109221950"/>
     </location>
-
+	-->
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 	  <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20200224183213/repository"/>
