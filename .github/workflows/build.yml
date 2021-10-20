@@ -133,15 +133,45 @@ jobs:
           -Psign-artifacts,release-judong \
           deploy
 
-      - name: Release P2
+      - name: Release P2 (parallel uoload)
         run: |-
-          ./mvnw -B -Dstyle.color=always \
-          -Dtycho.mode=maven \
-          -Prelease-dummy,release-p2-judong \
-          -DdeployOnly \
-          -DskipTests=true \
-          -DskipModules=true \
-          deploy
+          export BASE_URL=https://nexus.judo.technology/repository/p2-judong/judo-epp-common/${VERSION_NUMBER}
+          export REPOSITORY_DIR=/common-site/target/repository
+          export USERNAME=${{ secrets.JUDONG_NEXUS_USERNAME }}
+          export PASSWORD=${{ secrets.JUDONG_NEXUS_PASSWORD }}
+          export NUM_OF_PROC=6
+
+          callUpload() {
+            curl --write-out ' %{url_effective} Bytes: %{size_upload} Response code: %{http_code}\n' \
+              --insecure \
+              --silent \
+              --output /dev/null \
+              --user "$USERNAME:$PASSWORD" \
+              --upload-file $REPOSITORY_DIR$/1 $BASE_URL$/1
+          }
+          export -f callUpload
+
+          REP_DIR_LEN=`echo -n "$REPOSITORY_DIR" | wc -c`; REP_DIR_LEN=$(($REP_DIR_LEN + 1))
+
+          find $REPOSITORY_DIR -type f -print0 | xargs -0 -I file echo "file" | cut -c$REP_DIR_LEN- | xargs -P $NUM_OF_PROC -I {} bash -c 'callUpload "$@"' _ {} 
+
+
+#    - blackbelttechnology/parallel-upload@1.0.2:
+#      url:      ${JUDONG_P2_UPSTREAM}/judo-epp-common/${VERSION_NUMBER}
+#      path:     ${WERCKER_SOURCE_DIR}/common-site/target/repository
+#      username: ${JUDONG_NEXUS_USERNAME}
+#      password: ${JUDONG_NEXUS_PASSWORD}
+#      proc:     "6"
+
+#      - name: Release P2
+#        run: |-
+#          ./mvnw -B -Dstyle.color=always \
+#          -Dtycho.mode=maven \
+#          -Prelease-dummy,release-p2-judong \
+#          -DdeployOnly \
+#          -DskipTests=true \
+#          -DskipModules=true \
+#          deploy
 
       - name: Create success message
         if: ${{ !failure() && !cancelled() }}
