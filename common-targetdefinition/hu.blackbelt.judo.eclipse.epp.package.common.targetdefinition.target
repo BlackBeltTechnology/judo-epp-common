@@ -254,6 +254,83 @@
       <unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.12.1.v20210218-2134"/>
     </location>
 
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="https://download.eclipse.org/technology/m2e/releases/1.17.2"/>
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.17.2.20210219-1922"/>
+      <unit id="org.eclipse.m2e.logback.feature.feature.group" version="1.17.0.20200924-1339"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="http://ianbrandt.github.io/m2e-maven-dependency-plugin"/>
+      <unit id="com.ianbrandt.tools.m2e.mdp.feature.feature.group" version="0.0.4.201409291703"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="https://download.eclipse.org/emfatic/update-18032020/"/>
+      <unit id="org.eclipse.emf.emfatic.feature.group" version="0.8.0.201507261242"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="https://de-jcup.github.io/update-site-eclipse-asciidoctor-editor/update-site/"/>
+      <unit id="de.jcup.asciidoctoreditor.feature.group" version="2.4.1"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="http://www.mihai-nita.net/eclipse"/>
+      <unit id="net.mihai-nita.ansicon.feature.group" version="1.4.4.202102080044"/>
+      <unit id="net.mihai-nita.externalfilter.feature.group" version="1.0.1.201612301822"/>
+    </location>
+
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="http://update.knime.org/analytics-platform/4.3"/>
+      <unit id="com.make.chromium.cef.feature.feature.group" version="76.0.2.202011090652"/>
+      <unit id="org.eclipse.swt.chromium.feature.feature.group" version="76.0.9.202101180249"/>
+      <unit id="org.eclipse.swt.chromium.feature.source.feature.group" version="76.0.9.202101180249"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.eclipse.org/modeling/emf/compare/updates/releases/3.3"/>
+      <unit id="org.eclipse.emf.compare.diagram.gmf.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.diagram.gmf.source.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.diagram.sirius.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.diagram.sirius.source.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.egit.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.egit.source.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.source.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui.source.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.source.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.tests.feature.group" version="3.5.2.202011241436"/>
+      <unit id="org.eclipse.emf.compare.tests.source.feature.group" version="3.5.2.202011241436"/>
+      <unit id="org.eclipse.emf.compare.uml2.feature.group" version="3.3.13.202011241436"/>
+      <unit id="org.eclipse.emf.compare.uml2.source.feature.group" version="3.3.13.202011241436"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="https://download.eclipse.org/ecoretools/updates/releases/3.3.3/"/>
+      <unit id="org.eclipse.emf.ecoretools.design.feature.group" version="3.3.3.202010261352"/>
+<!--      <unit id="org.eclipse.emf.ecoretools.explorer.contextual.feature.group" version="3.3.3.202010261352"/> -->
+      <unit id="org.eclipse.emf.ecoretools.sdk.feature.group" version="3.3.3.202010261352"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="https://www.genuitec.com/updates/devstyle/ci/"/>
+      <unit id="com.genuitec.eclipse.theming.core.feature.feature.group" version="1.11.0.202105260439"/>
+      <unit id="com.genuitec.eclipse.theming.designer.feature.feature.group" version="1.11.0.202105260439"/>
+      <unit id="com.genuitec.eclipse.theming.feature.feature.group" version="1.11.0.202105260439"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <repository location="https://www.codetogether.com/updates/ci/"/>
+      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.2.0.202109221950"/>
+    </location>
+
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+	  <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20200224183213/repository"/>
+	  <unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
+	  <unit id="com.google.guava" version="27.1.0.v20190517-1946"/>
+	  <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
+    </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20210223232630/repository"/>
@@ -478,75 +555,6 @@
       <unit id="osgi.enterprise.source" version="4.2.0.v201108120515"/>
     </location>
 
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/technology/m2e/releases/1.17.2"/>
-      <unit id="org.eclipse.m2e.feature.feature.group" version="1.17.2.20210219-1922"/>
-      <unit id="org.eclipse.m2e.logback.feature.feature.group" version="1.17.0.20200924-1339"/>
-    </location>
-
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="http://ianbrandt.github.io/m2e-maven-dependency-plugin"/>
-      <unit id="com.ianbrandt.tools.m2e.mdp.feature.feature.group" version="0.0.4.201409291703"/>
-    </location>
-
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/emfatic/update-18032020/"/>
-      <unit id="org.eclipse.emf.emfatic.feature.group" version="0.8.0.201507261242"/>
-    </location>
-
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://de-jcup.github.io/update-site-eclipse-asciidoctor-editor/update-site/"/>
-      <unit id="de.jcup.asciidoctoreditor.feature.group" version="2.4.1"/>
-    </location>
-
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="http://www.mihai-nita.net/eclipse"/>
-      <unit id="net.mihai-nita.ansicon.feature.group" version="1.4.4.202102080044"/>
-      <unit id="net.mihai-nita.externalfilter.feature.group" version="1.0.1.201612301822"/>
-    </location>
-
-
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="http://update.knime.org/analytics-platform/4.3"/>
-      <unit id="com.make.chromium.cef.feature.feature.group" version="76.0.2.202011090652"/>
-      <unit id="org.eclipse.swt.chromium.feature.feature.group" version="76.0.9.202101180249"/>
-      <unit id="org.eclipse.swt.chromium.feature.source.feature.group" version="76.0.9.202101180249"/>
-    </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.eclipse.org/modeling/emf/compare/updates/releases/3.3"/>
-      <unit id="org.eclipse.emf.compare.diagram.gmf.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.diagram.gmf.source.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.diagram.sirius.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.diagram.sirius.source.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.egit.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.egit.source.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.source.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui.source.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.source.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.tests.feature.group" version="3.5.2.202011241436"/>
-      <unit id="org.eclipse.emf.compare.tests.source.feature.group" version="3.5.2.202011241436"/>
-      <unit id="org.eclipse.emf.compare.uml2.feature.group" version="3.3.13.202011241436"/>
-      <unit id="org.eclipse.emf.compare.uml2.source.feature.group" version="3.3.13.202011241436"/>
-    </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://download.eclipse.org/ecoretools/updates/releases/3.3.3/"/>
-      <unit id="org.eclipse.emf.ecoretools.design.feature.group" version="3.3.3.202010261352"/>
-<!--      <unit id="org.eclipse.emf.ecoretools.explorer.contextual.feature.group" version="3.3.3.202010261352"/> -->
-      <unit id="org.eclipse.emf.ecoretools.sdk.feature.group" version="3.3.3.202010261352"/>
-    </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://www.genuitec.com/updates/devstyle/ci/"/>
-      <unit id="com.genuitec.eclipse.theming.core.feature.feature.group" version="1.11.0.202105260439"/>
-      <unit id="com.genuitec.eclipse.theming.designer.feature.feature.group" version="1.11.0.202105260439"/>
-      <unit id="com.genuitec.eclipse.theming.feature.feature.group" version="1.11.0.202105260439"/>
-    </location>
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <repository location="https://www.codetogether.com/updates/ci/"/>
-      <unit id="com.genuitec.eclipse.codetogether.feature.feature.group" version="4.1.3.202108191629"/>
-    </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20201130205003/repository"/>
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.10.3.v20200512-1600"/>
