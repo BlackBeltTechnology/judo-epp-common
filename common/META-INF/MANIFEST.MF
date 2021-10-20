@@ -4,7 +4,7 @@ Bundle-Name: Judo Common EPP Bundle
 Bundle-SymbolicName: hu.blackbelt.judo.eclipse.epp.package.common;singleton:=true
 Bundle-Version: 4.19.0.qualifier
 Bundle-Vendor: Judo Eclipse Packaging Project
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app,
  org.eclipse.ui,
