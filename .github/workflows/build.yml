@@ -131,7 +131,7 @@ jobs:
           ./mvnw -B -Dstyle.color=always \
           -Drevision=${{ steps.version.outputs.version }} \
           -Psign-artifacts,release-judong \
-          deploy
+          install
 
       - name: Release P2 (parallel uoload)
         run: |-
