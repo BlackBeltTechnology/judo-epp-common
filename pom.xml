@@ -22,6 +22,7 @@
     
     <scm>
         <connection>scm:git:git@github.com:${project-repositoryId}.git</connection>
+        <!--suppress UnresolvedMavenProperty -->
         <developerConnection>scm:git:ssh://${git.username}@github.com:${project-repositoryId}.git
         </developerConnection>
         <url>http://github.com/${project-repositoryId}</url>
@@ -268,7 +269,6 @@
                 </dependencies>
                 <configuration>
                     <timestampProvider>jgit</timestampProvider>
-                    <jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
                     <format>yyyyMMdd-HHmm</format>
                     <sourceReferences>
                         <generate>true</generate>
