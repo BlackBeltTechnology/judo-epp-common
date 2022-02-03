@@ -334,6 +334,7 @@
    <feature id="org.eclipse.epsilon.uml.feature">
       <category name="epsilon"/>
    </feature>
+   -->
    <feature id="org.eclipse.equinox.p2.core.feature">
       <category name="eclipse"/>
    </feature>
@@ -382,7 +383,6 @@
    <feature id="org.eclipse.jdt">
       <category name="eclipse"/>
    </feature>
-   -->
    <feature id="org.eclipse.jdt.source">
       <category name="egit"/>
    </feature>
@@ -2378,9 +2378,7 @@
    <category-def name="mwe" label="MWE"/>
    <category-def name="mwe2" label="MWE2"/>
    <category-def name="marketplace" label="Marketplace"/>
-   <!--
    <category-def name="epsilon" label="epsilon"/>
-   -->
    <category-def name="sirius" label="sirius"/>
    <category-def name="xtext" label="XText"/>
    <category-def name="xtend" label="XText"/>
