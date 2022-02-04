@@ -1053,12 +1053,6 @@
    <bundle id="org.objectweb.asm.commons">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.objectweb.asm.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.objectweb.asm.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.objectweb.asm.tree">
       <category name="3rdparty"/>
    </bundle>
@@ -1093,12 +1087,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.slf4j.api">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.slf4j.api.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.slf4j.api.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.slf4j.binding.log4j12">
@@ -1299,12 +1287,6 @@
    <bundle id="com.sun.jna.platform">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.sun.jna.platform.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.sun.jna.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="com.sun.xml.bind">
       <category name="3rdparty"/>
    </bundle>
@@ -1341,12 +1323,6 @@
    <bundle id="org.antlr.runtime">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.antlr.runtime.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.antlr.runtime.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.aopalliance">
       <category name="3rdparty"/>
    </bundle>
@@ -1359,97 +1335,10 @@
    <bundle id="org.apache.axis">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.apache.batik.bridge">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.bridge.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.constants">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.constants.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.css">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.css">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.css.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.css.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.dom">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.dom.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.dom.svg">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.dom.svg.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.ext.awt">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.ext.awt.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.i18n">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.i18n.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.parser">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.parser.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.pdf">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.svggen">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.svggen.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.transcoder">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.transcoder.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.util">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.util">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.apache.batik.util.gui">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.batik.util.gui.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.util.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.util.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.xml">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.xml.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.bcel">
@@ -1477,15 +1366,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.commons.cli">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.commons.cli.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.commons.codec">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.commons.codec.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.commons.collections">
@@ -1710,15 +1590,6 @@
    <bundle id="org.apache.lucene.analyzers-smartcn.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.apache.lucene.core">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.lucene.core">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.lucene.core.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.apache.lucene.queryparser">
       <category name="3rdparty"/>
    </bundle>
@@ -1759,12 +1630,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.sshd.core.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.sshd.osgi">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.sshd.osgi.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.sshd.sftp">
