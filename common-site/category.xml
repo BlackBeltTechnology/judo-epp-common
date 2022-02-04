@@ -591,7 +591,13 @@
    <feature id="org.eclipse.emf.compare.diagram.gmf">
       <category name="emf-compare"/>
    </feature>
+   <feature id="org.eclipse.emf.compare.diagram.gmf.source">
+      <category name="emf-compare"/>
+   </feature>
    <feature id="org.eclipse.emf.compare.diagram.sirius">
+      <category name="emf-compare"/>
+   </feature>
+   <feature id="org.eclipse.emf.compare.diagram.sirius.source">
       <category name="emf-compare"/>
    </feature>
    <feature id="org.eclipse.emf.compare.egit">
@@ -611,6 +617,9 @@
    </feature>
    <feature id="org.eclipse.emf.compare.uml2.source">
       <category name="emf-compare"/>
+   </feature>
+   <feature id="org.eclipse.swt.chromium.feature.source">
+      <category name="chromium"/>
    </feature>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature">
       <category name="eclipse"/>
@@ -1743,6 +1752,9 @@
    <bundle id="org.apache.commons.pool">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.apache.commons.pool.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.apache.el">
       <category name="3rdparty"/>
    </bundle>
@@ -1879,6 +1891,9 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.mina.core">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.mina.core.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.mina.filter.compression">
