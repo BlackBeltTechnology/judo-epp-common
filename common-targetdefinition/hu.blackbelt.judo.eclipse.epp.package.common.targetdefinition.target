@@ -48,6 +48,7 @@
       <unit id="org.eclipse.ecf.core.ssl.feature.source.feature.group" version="1.1.501.v20210409-2301"/>
       <unit id="org.eclipse.ecf.remoteservice.sdk.feature.feature.group" version="3.14.26.v20211008-2151"/>
       <unit id="org.eclipse.ecf.remoteservice.sdk.feature.source.feature.group" version="3.14.26.v20211008-2151"/>
+      <!--
       <unit id="org.eclipse.equinox.compendium.sdk.feature.group" version="3.22.200.v20211021-1418"/>
       <unit id="org.eclipse.equinox.core.feature.feature.group" version="1.13.400.v20211104-1730"/>
       <unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.23.200.v20211104-1730"/>
@@ -65,6 +66,7 @@
       <unit id="org.eclipse.equinox.server.p2.feature.group" version="1.12.300.v20211104-1616"/>
       <unit id="org.eclipse.equinox.serverside.sdk.feature.group" version="3.23.200.v20211104-1730"/>
       <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.1400.v20211117-0650"/>
+      -->
 
 	    <unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.14.102.201911250848"/>
 	    <unit id="org.eclipse.datatools.enablement.hsqldb.feature.feature.group" version="1.14.102.201911250848"/>
@@ -205,6 +207,7 @@
 	    <unit id="org.eclipse.xtext.ui.feature.group" version="2.25.0.v20210301-1429"/>
 	    <unit id="org.eclipse.xtext.xtext.ui.feature.group" version="2.25.0.v20210301-1429"/>
 	    <unit id="org.eclipse.xtext.xtext.ui.graph.feature.group" version="2.25.0.v20210301-1429"/>
+	    
     </location>
 
 <!--
@@ -740,8 +743,6 @@
 	    <unit id="net.i2p.crypto.eddsa.source" version="0.3.0.v20181102-1323"/>
 	    <unit id="org.antlr.runtime" version="4.7.2.v20200218-0804"/>
 	    <unit id="org.antlr.runtime.source" version="4.7.2.v20200218-0804"/>
-	    <unit id="org.apache.httpcomponents.httpclient.win" version="4.5.10.v20200113-2105"/>
-	    <unit id="org.apache.httpcomponents.httpclient.win.source" version="4.5.10.v20200113-2105"/>
 	    <unit id="org.apiguardian" version="1.1.0.v20190826-0900"/>
 	    <unit id="org.apiguardian.source" version="1.1.0.v20190826-0900"/>
 	    <unit id="org.assertj" version="3.14.0.v20200120-1926"/>
@@ -754,9 +755,11 @@
 	    <unit id="org.bouncycastle.bcprov.source" version="1.64.0.v20191109-0815"/>
 	    <unit id="org.dom4j" version="2.1.1.v20190321-1528"/>
 	    <unit id="org.dom4j.source" version="2.1.1.v20190321-1528"/>
+	    <!--
 	    <unit id="org.eclipse.osgi" version="3.15.200.v20200214-1600"/>
 	    <unit id="org.eclipse.osgi.services" version="3.8.0.v20190206-2147"/>
 	    <unit id="org.eclipse.osgi.util" version="3.5.300.v20190708-1141"/>
+	    -->
 	    <unit id="org.ejml.core" version="0.29.0.v20190617-1333"/>
 	    <unit id="org.ejml.core.source" version="0.29.0.v20190617-1333"/>
 	    <unit id="org.ejml.dense64" version="0.29.0.v20190617-1333"/>
@@ -866,6 +869,38 @@
 	    <unit id="org.reactivestreams.source" version="1.0.2.v20181120-0809"/>
 	    <unit id="org.tukaani.xz" version="1.8.0.v20180207-1613"/>
 	    <unit id="org.tukaani.xz.source" version="1.8.0.v20180207-1613"/>
+	    
+	          <unit id="javassist" version="3.13.0.GA_v201209210905"/>
+      <unit id="javassist.source" version="3.13.0.GA_v201209210905"/>
+      <unit id="javax.activation" version="1.1.0.v201211130549"/>
+      <unit id="javax.activation.source" version="1.1.0.v201211130549"/>
+      <unit id="javax.annotation" version="1.2.0.v201602091430"/>
+      <unit id="javax.annotation.source" version="1.2.0.v201602091430"/>
+      <unit id="javax.el" version="2.2.0.v201303151357"/>
+      <unit id="javax.el.source" version="2.2.0.v201303151357"/>
+      <unit id="javax.inject" version="1.0.0.v20091030"/>
+      <unit id="javax.inject.source" version="1.0.0.v20091030"/>
+      <unit id="javax.jms" version="1.1.0.v201205091237"/>
+      <unit id="javax.jms.source" version="1.1.0.v201205091237"/>
+      <unit id="javax.mail.glassfish" version="1.4.1.v201108011116"/>
+      <unit id="javax.mail.glassfish.source" version="1.4.1.v201108011116"/>
+      <unit id="javax.persistence" version="1.0.0.v200905011740"/>
+      <unit id="javax.persistence.source" version="1.0.0.v200905011740"/>
+      <unit id="javax.servlet" version="3.1.0.v201410161800"/>
+      <unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
+      <unit id="javax.servlet.jsp.source" version="2.2.0.v201112011158"/>
+      <unit id="javax.servlet.source" version="3.1.0.v201410161800"/>
+      <unit id="javax.transaction" version="1.1.1.v201105210645"/>
+      <unit id="javax.transaction.source" version="1.1.1.v201105210645"/>
+      <unit id="javax.validation" version="1.1.0.v20200127-1748"/>
+      <unit id="javax.validation.source" version="1.1.0.v20200127-1748"/>
+      <unit id="javax.ws.rs" version="2.1.1.v20200204-1659"/>
+      <unit id="javax.wsdl" version="1.6.2.v201012040545"/>
+      <unit id="javax.wsdl.source" version="1.6.2.v201012040545"/>
+      <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
+      <unit id="javax.xml.bind.source" version="2.2.0.v201105210648"/>
+      <unit id="javax.xml.rpc" version="1.1.0.v201209140446"/>
+	    
     </location>
 	
 <!--
