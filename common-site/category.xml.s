@@ -204,6 +204,9 @@
    <feature id="org.eclipse.emf.emfatic">
       <category name="emf"/>
    </feature>
+   <feature id="org.eclipse.emf.examples">
+      <category name="emf"/>
+   </feature>
    <feature id="org.eclipse.emf.mapping">
       <category name="emf"/>
    </feature>
@@ -276,6 +279,62 @@
    <feature id="org.eclipse.epp.mpc">
       <category name="marketplace"/>
    </feature>
+   <!--
+   <feature id="org.eclipse.epsilon.core.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.core.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.graphml.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.spreadsheets.excel.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.spreadsheets.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.spreadsheets.google.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emf.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emf.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.eunit.dt.emf.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.evl.emf.validation.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.ewl.emf.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.ewl.gmf.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.hutn.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.hutn.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.simulink.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.simulink.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.uml.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.uml.feature">
+      <category name="epsilon"/>
+   </feature>
+   -->
    <feature id="org.eclipse.equinox.p2.core.feature">
       <category name="eclipse"/>
    </feature>
@@ -561,7 +620,13 @@
    <feature id="org.eclipse.equinox.serverside.sdk">
       <category name="http"/>
    </feature>
-   <feature id="org.eclipse.m2e.lemminx.feature">
+   <feature id="com.make.chromium.cef.feature">
+      <category name="chromium"/>
+   </feature>
+   <feature id="org.eclipse.swt.chromium.feature">
+      <category name="chromium"/>
+   </feature>
+   <feature id="org.eclipse.m2e.sse.ui.feature">
       <category name="m2e"/>
    </feature>
    <feature id="org.eclipse.mat.chart.feature">
@@ -603,13 +668,28 @@
    <feature id="org.eclipse.emf.compare.egit">
       <category name="emf-compare"/>
    </feature>
+   <feature id="org.eclipse.emf.compare.egit.source">
+      <category name="emf-compare"/>
+   </feature>
    <feature id="org.eclipse.emf.compare.ide.ui">
       <category name="emf-compare"/>
    </feature>
    <feature id="org.eclipse.emf.compare.ide.ui.source">
       <category name="emf-compare"/>
    </feature>
+   <feature id="org.eclipse.emf.compare.rcp.ui">
+      <category name="emf-compare"/>
+   </feature>
+   <feature id="org.eclipse.emf.compare.rcp.ui.source">
+      <category name="emf-compare"/>
+   </feature>
    <feature id="org.eclipse.emf.compare.source">
+      <category name="emf-compare"/>
+   </feature>
+   <feature id="org.eclipse.emf.compare.tests">
+      <category name="emf-compare"/>
+   </feature>
+   <feature id="org.eclipse.emf.compare.tests.source">
       <category name="emf-compare"/>
    </feature>
    <feature id="org.eclipse.emf.compare.uml2">
@@ -617,6 +697,32 @@
    </feature>
    <feature id="org.eclipse.emf.compare.uml2.source">
       <category name="emf-compare"/>
+   </feature>
+   <!--
+   <feature id="org.eclipse.epsilon.emc.csv.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.csv.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.spreadsheets.excel.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.emc.spreadsheets.google.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.flexmi.dt.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.flexmi.feature">
+      <category name="epsilon"/>
+   </feature>
+   <feature id="org.eclipse.epsilon.picto.feature">
+      <category name="epsilon"/>
+   </feature>
+   -->
+   <feature id="org.eclipse.swt.chromium.feature.source">
+      <category name="chromium"/>
    </feature>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature">
       <category name="eclipse"/>
@@ -741,6 +847,11 @@
    <feature id="org.eclipse.passage.lic.features.feature">
       <category name="eclipse"/>
    </feature>
+   <!--
+   <feature id="org.eclipse.passage.lic.floating.feature">
+      <category name="eclipse"/>
+   </feature>
+   -->
    <feature id="org.eclipse.passage.lic.hc.feature">
       <category name="eclipse"/>
    </feature>
@@ -894,6 +1005,29 @@
    <feature id="org.eclipse.xsd.source">
       <category name="eclipse"/>
    </feature>
+<!--
+   <feature id="com.genuitec.eclipse.base.feature">
+      <category name="genuitec"/>
+   </feature>
+   <feature id="com.genuitec.eclipse.codetogether.client.feature">
+      <category name="genuitec"/>
+   </feature>
+   <feature id="com.genuitec.eclipse.codetogether.feature">
+      <category name="genuitec"/>
+   </feature>
+   <feature id="com.genuitec.eclipse.common.explorer.jdt.feature">
+      <category name="genuitec"/>
+   </feature>
+   <feature id="com.genuitec.eclipse.theming.core.feature">
+      <category name="genuitec"/>
+   </feature>
+   <feature id="com.genuitec.eclipse.theming.designer.feature">
+      <category name="genuitec"/>
+   </feature>
+   <feature id="com.genuitec.eclipse.theming.feature">
+      <category name="genuitec"/>
+   </feature>
+-->
    <feature id="org.eclipse.equinox.compendium.sdk">
       <category name="http"/>
    </feature>
@@ -1050,7 +1184,19 @@
    <bundle id="org.objectweb.asm.analysis">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.objectweb.asm.analysis.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.objectweb.asm.commons">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.objectweb.asm.commons.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.objectweb.asm.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.objectweb.asm.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.objectweb.asm.tree">
@@ -1065,6 +1211,18 @@
    <bundle id="org.objectweb.asm.util">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.objectweb.asm.util.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.objectweb.asm.util.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.objectweb.asm.xml">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.objectweb.asm.xml.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.objenesis">
       <category name="3rdparty"/>
    </bundle>
@@ -1077,6 +1235,18 @@
    <bundle id="org.opentest4j.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.restlet">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.restlet.ext.servlet">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.restlet.ext.servlet.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.restlet.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.sat4j.core">
       <category name="3rdparty"/>
    </bundle>
@@ -1087,6 +1257,12 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.slf4j.api">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.slf4j.api.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.slf4j.api.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.slf4j.binding.log4j12">
@@ -1158,6 +1334,21 @@
    <bundle id="org.w3c.dom.svg.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.xmlpull">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.yaml.snakeyaml">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.yaml.snakeyaml.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="osgi.enterprise">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="osgi.enterprise.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="ch.qos.logback.classic">
       <category name="3rdparty"/>
    </bundle>
@@ -1176,13 +1367,76 @@
    <bundle id="ch.qos.logback.slf4j.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="com.atlassian.commonmark">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-gfm-strikethrough">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-gfm-strikethrough.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-gfm-tables">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-gfm-tables.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-heading-anchor">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-heading-anchor.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-image-attributes">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-image-attributes.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-ins">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-ins.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-task-list-items">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-task-list-items.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-yaml">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark-yaml.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.atlassian.commonmark.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="com.fasterxml.jackson.core.jackson-annotations">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.fasterxml.jackson.core.jackson-annotations.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.fasterxml.jackson.core.jackson-core">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="com.fasterxml.jackson.core.jackson-core.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="com.fasterxml.jackson.core.jackson-databind">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.fasterxml.jackson.core.jackson-databind.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.fasterxml.jackson.datatype.jackson-datatype-guava">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.fasterxml.jackson.datatype.jackson-datatype-guava.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base">
@@ -1197,16 +1451,31 @@
    <bundle id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.github.virtuald.curvesapi">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.github.virtuald.curvesapi.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.google.gdata">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.google.gdata.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="com.google.gson">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.gson.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.google.guava" version="30.1.0">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.google.guava" version="27.1.0">
+   <bundle id="com.google.guava">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.guava">
@@ -1225,6 +1494,12 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.http-client.google-http-client-jackson2">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.google.http-client.google-http-client-jackson2.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.google.http-client.google-http-client.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.inject">
@@ -1246,6 +1521,9 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.j2objc.j2objc-annotations">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.google.j2objc.j2objc-annotations.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.protobuf">
@@ -1287,19 +1565,46 @@
    <bundle id="com.sun.jna.platform">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="com.sun.jna.platform.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.sun.jna.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="com.sun.xml.bind">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.sun.xml.bind.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.thoughtworks.xstream">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.thoughtworks.xstream.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="io.github.classgraph">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="io.github.classgraph.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="io.grpc.grpc-context">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="io.grpc.grpc-context.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="io.opencensus.opencensus-api">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="io.opencensus.opencensus-api.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="io.opencensus.opencensus-contrib-http-util">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="io.opencensus.opencensus-contrib-http-util.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="jakarta.xml.bind">
@@ -1317,10 +1622,22 @@
    <bundle id="javax.activation">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="net.sourceforge.plantuml">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="net.sourceforge.plantuml.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.antlr.runtime">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.antlr.runtime">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.antlr.runtime.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.antlr.runtime.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.aopalliance">
@@ -1335,10 +1652,97 @@
    <bundle id="org.apache.axis">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.apache.batik.bridge">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.bridge.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.constants">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.constants.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.css">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.css">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.css.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.css.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.dom">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.dom.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.dom.svg">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.dom.svg.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.ext.awt">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.ext.awt.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.i18n">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.i18n.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.parser">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.parser.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.pdf">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.svggen">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.svggen.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.transcoder">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.transcoder.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.util">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.util">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.apache.batik.util.gui">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.batik.util.gui.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.util.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.util.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.xml">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.batik.xml.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.bcel">
@@ -1368,10 +1772,25 @@
    <bundle id="org.apache.commons.cli">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.apache.commons.cli.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.commons.codec">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.commons.codec.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.apache.commons.collections">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.commons.collections.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.commons.collections4">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.commons.collections4.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.commons.compress">
@@ -1590,6 +2009,15 @@
    <bundle id="org.apache.lucene.analyzers-smartcn.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.apache.lucene.core">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.lucene.core">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.lucene.core.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.apache.lucene.queryparser">
       <category name="3rdparty"/>
    </bundle>
@@ -1632,6 +2060,12 @@
    <bundle id="org.apache.sshd.core.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.apache.sshd.osgi">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.sshd.osgi.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.apache.sshd.sftp">
       <category name="3rdparty"/>
    </bundle>
@@ -1647,10 +2081,16 @@
    <bundle id="org.apache.xalan">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="org.apache.xalan.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="org.apache.xerces">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.xerces">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="org.apache.xerces.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.xml.resolver">
@@ -1728,6 +2168,9 @@
    <bundle id="org.codehaus.jackson.xc.source">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="jakarta.xml.bind.source">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="javaewah.source">
       <category name="3rdparty"/>
    </bundle>
@@ -1753,6 +2196,9 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="javax.inject.source">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="javax.javaee-api">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="javax.jms">
@@ -1833,6 +2279,9 @@
    <bundle id="javax.xml.stream">
       <category name="3rdparty"/>
    </bundle>
+   <bundle id="jnr.x86asm">
+      <category name="3rdparty"/>
+   </bundle>
    <bundle id="lpg.runtime.java">
       <category name="3rdparty"/>
    </bundle>
@@ -1861,6 +2310,12 @@
       <category name="http"/>
    </bundle>
    <bundle id="org.eclipse.equinox.http.jetty.source">
+      <category name="http"/>
+   </bundle>
+   <bundle id="org.eclipse.jetty.continuation">
+      <category name="http"/>
+   </bundle>
+   <bundle id="org.eclipse.jetty.continuation.source">
       <category name="http"/>
    </bundle>
    <bundle id="org.eclipse.jetty.http">
@@ -1923,11 +2378,13 @@
    <category-def name="mwe" label="MWE"/>
    <category-def name="mwe2" label="MWE2"/>
    <category-def name="marketplace" label="Marketplace"/>
+   <category-def name="epsilon" label="epsilon"/>
    <category-def name="sirius" label="sirius"/>
    <category-def name="xtext" label="XText"/>
    <category-def name="xtend" label="XText"/>
    <category-def name="ansi_console" label="ANSIConsole"/>
-   <category-def name="http" label="HTTP"/>
+   <category-def name="http" label="New Category 1"/>
+   <category-def name="chromium" label="chromium"/>
    <category-def name="emf-compare" label="EMF Compare"/>
    <category-def name="genuitec" label="Genuitec"/>
    <category-def name="3rdparty" label="3rd party plugins"/>
