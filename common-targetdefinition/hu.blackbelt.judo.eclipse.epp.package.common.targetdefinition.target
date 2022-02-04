@@ -799,8 +799,6 @@
 	    <unit id="org.apache.commons.cli.source" version="1.2.0.v201404270220"/>
 	    <unit id="org.apache.commons.collections" version="3.2.2.v201511171945"/>
 	    <unit id="org.apache.commons.collections.source" version="3.2.2.v201511171945"/>
-	    <unit id="org.apache.commons.daemon" version="1.0.5.v20121125-0905"/>
-	    <unit id="org.apache.commons.daemon.source" version="1.0.5.v20121125-0905"/>
 	    <unit id="org.apache.commons.dbcp" version="1.4.0.v201204271417"/>
 	    <unit id="org.apache.commons.dbcp.source" version="1.4.0.v201204271417"/>
 	    <unit id="org.apache.commons.discovery" version="0.2.0.v201004190315"/>

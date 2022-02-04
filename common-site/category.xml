@@ -618,9 +618,6 @@
    <feature id="org.eclipse.emf.compare.uml2.source">
       <category name="emf-compare"/>
    </feature>
-   <feature id="org.eclipse.swt.chromium.feature.source">
-      <category name="chromium"/>
-   </feature>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature">
       <category name="eclipse"/>
    </feature>
@@ -1053,13 +1050,7 @@
    <bundle id="org.objectweb.asm.analysis">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.objectweb.asm.analysis.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.objectweb.asm.commons">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.objectweb.asm.commons.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.objectweb.asm.source">
@@ -1080,18 +1071,6 @@
    <bundle id="org.objectweb.asm.util">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.objectweb.asm.util.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.objectweb.asm.util.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.objectweb.asm.xml">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.objectweb.asm.xml.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.objenesis">
       <category name="3rdparty"/>
    </bundle>
@@ -1102,18 +1081,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.opentest4j.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.restlet">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.restlet.ext.servlet">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.restlet.ext.servlet.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.restlet.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.sat4j.core">
@@ -1203,21 +1170,6 @@
    <bundle id="org.w3c.dom.svg.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.xmlpull">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.yaml.snakeyaml">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.yaml.snakeyaml.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="osgi.enterprise">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="osgi.enterprise.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="ch.qos.logback.classic">
       <category name="3rdparty"/>
    </bundle>
@@ -1236,76 +1188,13 @@
    <bundle id="ch.qos.logback.slf4j.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.atlassian.commonmark">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-gfm-strikethrough">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-gfm-strikethrough.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-gfm-tables">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-gfm-tables.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-heading-anchor">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-heading-anchor.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-image-attributes">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-image-attributes.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-ins">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-ins.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-task-list-items">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-task-list-items.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-yaml">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark-yaml.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.atlassian.commonmark.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="com.fasterxml.jackson.core.jackson-annotations">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.fasterxml.jackson.core.jackson-annotations.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.fasterxml.jackson.core.jackson-core">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.fasterxml.jackson.core.jackson-core.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="com.fasterxml.jackson.core.jackson-databind">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.fasterxml.jackson.core.jackson-databind.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.fasterxml.jackson.datatype.jackson-datatype-guava">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.fasterxml.jackson.datatype.jackson-datatype-guava.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base">
@@ -1320,31 +1209,16 @@
    <bundle id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.github.virtuald.curvesapi">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.github.virtuald.curvesapi.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.google.gdata">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.google.gdata.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="com.google.gson">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.gson.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.google.guava">
+   <bundle id="com.google.guava" version="30.1.0">
+      <category name="3rdparty"/>
+   </bundle>
+   <bundle id="com.google.guava" version="27.1.0">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.guava">
@@ -1363,12 +1237,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.http-client.google-http-client-jackson2">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.google.http-client.google-http-client-jackson2.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.google.http-client.google-http-client.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.inject">
@@ -1390,9 +1258,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.j2objc.j2objc-annotations">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.google.j2objc.j2objc-annotations.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="com.google.protobuf">
@@ -1443,37 +1308,16 @@
    <bundle id="com.sun.xml.bind">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="com.sun.xml.bind.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.thoughtworks.xstream">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="com.thoughtworks.xstream.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="io.github.classgraph">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="io.github.classgraph.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="io.grpc.grpc-context">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="io.grpc.grpc-context.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="io.opencensus.opencensus-api">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="io.opencensus.opencensus-api.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="io.opencensus.opencensus-contrib-http-util">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="io.opencensus.opencensus-contrib-http-util.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="jakarta.xml.bind">
@@ -1489,12 +1333,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="javax.activation">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="net.sourceforge.plantuml">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="net.sourceforge.plantuml.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.antlr.runtime">
@@ -1654,12 +1492,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.commons.collections.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.commons.collections4">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.commons.collections4.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.commons.compress">
@@ -1950,16 +1782,10 @@
    <bundle id="org.apache.xalan">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.apache.xalan.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.apache.xerces">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.xerces">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.xerces.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.xml.resolver">
@@ -2037,9 +1863,6 @@
    <bundle id="org.codehaus.jackson.xc.source">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="jakarta.xml.bind.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="javaewah.source">
       <category name="3rdparty"/>
    </bundle>
@@ -2065,9 +1888,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="javax.inject.source">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="javax.javaee-api">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="javax.jms">
@@ -2146,9 +1966,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="javax.xml.stream">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="jnr.x86asm">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="lpg.runtime.java">
