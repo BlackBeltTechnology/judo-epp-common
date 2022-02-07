@@ -40,7 +40,7 @@
     </developers>
     
     <properties>
-        <revision>4.19.0-SNAPSHOT</revision>
+        <revision>4.22.0-SNAPSHOT</revision>
         <maven>3.8.3</maven>
         <maven.version>3.8.3</maven.version>
         <tycho-version>2.5.0</tycho-version>
@@ -241,6 +241,11 @@
                             <arch>x86_64</arch>
                         </environment>
                         <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>aarch64</arch>
+                        </environment>
+                        <environment>
                             <os>win32</os>
                             <ws>win32</ws>
                             <arch>x86_64</arch>
@@ -250,6 +255,12 @@
                             <ws>cocoa</ws>
                             <arch>x86_64</arch>
                         </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>aarch64</arch>
+                        </environment>
+
                     </environments>
                 </configuration>
             </plugin>
