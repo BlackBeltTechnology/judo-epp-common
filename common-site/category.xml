@@ -1095,12 +1095,6 @@
    <bundle id="org.slf4j.api">
       <category name="3rdparty"/>
    </bundle>
-   <bundle id="org.slf4j.binding.log4j12">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.slf4j.binding.log4j12.source">
-      <category name="3rdparty"/>
-   </bundle>
    <bundle id="org.slf4j.ext">
       <category name="3rdparty"/>
    </bundle>
