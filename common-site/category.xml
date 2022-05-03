@@ -915,6 +915,27 @@
    <feature id="m2e.chromatic.feature">
       <category name="m2e"/>
    </feature>
+   <feature id="net.sourceforge.plantuml.ecore.feature">
+      <category name="plantuml"/>
+   </feature>
+   <feature id="net.sourceforge.plantuml.ecore.feature.source">
+      <category name="plantuml"/>
+   </feature>
+   <feature id="net.sourceforge.plantuml.feature">
+      <category name="plantuml"/>
+   </feature>
+   <feature id="net.sourceforge.plantuml.feature.source">
+      <category name="plantuml"/>
+   </feature>
+   <feature id="net.sourceforge.plantuml.lib.elk.feature">
+      <category name="plantuml"/>
+   </feature>
+   <feature id="net.sourceforge.plantuml.lib.feature">
+      <category name="plantuml"/>
+   </feature>
+   <feature id="net.sourceforge.plantuml.lib.jlatexmath.feature">
+      <category name="plantuml"/>
+   </feature>
    <bundle id="org.hamcrest">
       <category name="3rdparty"/>
    </bundle>
@@ -1911,6 +1932,7 @@
       </description>
    </category-def>
    <category-def name="asciidoctor" label="Asciidoctor"/>
+   <category-def name="plantuml" label="PlantUML"/>
    <category-def name="m2e" label="M2E"/>
    <category-def name="acceleo" label="Acceleo"/>
    <category-def name="eclipse" label="Eclipse"/>
