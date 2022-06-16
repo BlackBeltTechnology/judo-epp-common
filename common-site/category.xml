@@ -51,12 +51,6 @@
    <feature id="org.eclipse.ecf.filetransfer.feature.source">
       <category name="ecf"/>
    </feature>
-   <feature id="org.eclipse.ecf.filetransfer.httpclient45.feature">
-      <category name="ecf"/>
-   </feature>
-   <feature id="org.eclipse.ecf.filetransfer.httpclient45.feature.source">
-      <category name="ecf"/>
-   </feature>
    <feature id="org.eclipse.ecf.filetransfer.ssl.feature">
       <category name="ecf"/>
    </feature>
@@ -591,13 +585,7 @@
    <feature id="org.eclipse.emf.compare.diagram.gmf">
       <category name="emf-compare"/>
    </feature>
-   <feature id="org.eclipse.emf.compare.diagram.gmf.source">
-      <category name="emf-compare"/>
-   </feature>
    <feature id="org.eclipse.emf.compare.diagram.sirius">
-      <category name="emf-compare"/>
-   </feature>
-   <feature id="org.eclipse.emf.compare.diagram.sirius.source">
       <category name="emf-compare"/>
    </feature>
    <feature id="org.eclipse.emf.compare.egit">
@@ -606,16 +594,7 @@
    <feature id="org.eclipse.emf.compare.ide.ui">
       <category name="emf-compare"/>
    </feature>
-   <feature id="org.eclipse.emf.compare.ide.ui.source">
-      <category name="emf-compare"/>
-   </feature>
-   <feature id="org.eclipse.emf.compare.source">
-      <category name="emf-compare"/>
-   </feature>
    <feature id="org.eclipse.emf.compare.uml2">
-      <category name="emf-compare"/>
-   </feature>
-   <feature id="org.eclipse.emf.compare.uml2.source">
       <category name="emf-compare"/>
    </feature>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature">
@@ -935,6 +914,939 @@
    </feature>
    <feature id="net.sourceforge.plantuml.lib.jlatexmath.feature">
       <category name="plantuml"/>
+   </feature>
+   <feature id="org.eclipse.acceleo">
+      <category name="acceleo"/>
+   </feature>
+   <feature id="org.eclipse.bpmn2.feature">
+      <category name="bpmn2"/>
+   </feature>
+   <feature id="org.eclipse.bpmn2.modeler">
+      <category name="bpmn2"/>
+   </feature>
+   <feature id="org.eclipse.bpmn2.modeler.examples">
+      <category name="bpmn2"/>
+   </feature>
+   <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+      <category name="bpmn2"/>
+   </feature>
+   <feature id="org.eclipse.collections.feature">
+      <category name="eclipse"/>
+   </feature>
+   <feature id="org.eclipse.collections.feature.source">
+      <category name="eclipse"/>
+   </feature>
+   <feature id="org.eclipse.datatools.common.doc.user">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.connectivity.doc.user">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.connectivity.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.doc.user">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.enablement.hsqldb.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.enablement.jdbc.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.enablement.jdt.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.enablement.postgresql.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.enablement.sqlite.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.intro">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.modelbase.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sdk.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.data.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.ddl.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.ddlgen.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.parsers.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.results.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.datatools.sqltools.doc.user">
+      <category name="datatools"/>
+   </feature>
+   <feature id="org.eclipse.draw2d.sdk">
+      <category name="eclipse"/>
+   </feature>
+   <feature id="org.eclipse.draw2d.source">
+      <category name="eclipse"/>
+   </feature>
+   <feature id="org.eclipse.e4.core.tools.feature">
+      <category name="e4"/>
+   </feature>
+   <feature id="org.eclipse.e4.core.tools.feature.source">
+      <category name="e4"/>
+   </feature>
+   <feature id="org.eclipse.ecf.core">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.core.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.jmdns.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.jmdns.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.slp.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.slp.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.zookeeper.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.discovery.zookeeper.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.eventadmin.examples.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.eventadmin.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.eventadmin.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.filetransfer.httpclient5.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.filetransfer.httpclient5.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.osgi.services.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.osgi.services.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.provider.generic.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.provider.generic.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.provider.generic.remoteservice.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.provider.generic.remoteservice.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.examples.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.rest.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.rest.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.rosgi.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.rosgi.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.sdk.examples.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.sdk.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.sdk.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.servlet.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.remoteservice.servlet.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.server.generic.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.server.generic.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.sharedobject.feature">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.ecf.sharedobject.feature.source">
+      <category name="ecf"/>
+   </feature>
+   <feature id="org.eclipse.dltk.core">
+      <category name="dltk"/>
+   </feature>
+   <feature id="org.eclipse.dltk.mylyn">
+      <category name="dltk"/>
+   </feature>
+   <feature id="org.eclipse.dltk.rse">
+      <category name="dltk"/>
+   </feature>
+   <feature id="org.eclipse.eclemma.feature">
+      <category name="eclemma"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.compare">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.compare.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.dawn">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.doc">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.ecore.dependencies">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.ecore.dependencies.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.epp">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.examples.installer">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.migrator">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.migrator.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.sdk">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.sdk.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.db">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.db.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.embedded">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.embedded.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.lissome">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.lissome.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.mongodb">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.mongodb.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.server.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.cdo.source">
+      <category name="cdo"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emf2web.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emf2web.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emfforms.idetooling.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emfforms.idetooling.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emfforms.runtime.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emfforms.runtime.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.emfforms.sdk.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.license.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.categorization.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.categorization.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.compoundcontrol.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.compoundcontrol.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.custom.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.custom.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.edapt.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.edapt.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.group.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.group.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.horizontal.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.horizontal.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.label.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.label.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.model.controls.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.model.controls.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.model.editor.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.model.editor.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.rule.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.rule.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.stack.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.stack.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.table.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.table.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.template.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.template.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.treemasterdetail.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.treemasterdetail.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.unset.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.unset.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.validation.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.validation.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.validation.initial.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.validation.initial.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.vertical.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.vertical.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.viewproxy.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.view.viewproxy.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.viewmodel.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.ecp.viewmodel.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emf.eef.codegen.ecore-feature">
+      <category name="eef"/>
+   </feature>
+   <feature id="org.eclipse.emf.eef.edt-feature">
+      <category name="eef"/>
+   </feature>
+   <feature id="org.eclipse.emf.eef.extended-feature">
+      <category name="eef"/>
+   </feature>
+   <feature id="org.eclipse.emf.eef.runtime-feature">
+      <category name="eef"/>
+   </feature>
+   <feature id="org.eclipse.emf.eef.sdk-feature">
+      <category name="eef"/>
+   </feature>
+   <feature id="org.eclipse.emf.edapt.runtime.feature">
+      <category name="edapt"/>
+   </feature>
+   <feature id="org.eclipse.emf.edapt.runtime.feature.source">
+      <category name="edapt"/>
+   </feature>
+   <feature id="org.eclipse.emf.query">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.query.doc">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.query.ocl">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.query.ocl.source">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.query.sdk">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.query.source">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.transaction.doc">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.transaction.sdk">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.transaction.source">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.validation.doc">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.validation.ocl">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.validation.ocl.source">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.validation.sdk">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.validation.source">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.workspace.doc">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.emf.workspace.source">
+      <category name="emf"/>
+   </feature>
+   <feature id="org.eclipse.m2e.feature.source">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.lemminx.feature.source">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.logback.feature.source">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.pde.feature">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.pde.feature.source">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.sdk.feature">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.sse.ui.feature">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.m2e.sse.ui.feature.source">
+      <category name="m2e"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.core.bazaar.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.core.bazaar.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.editor.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.editor.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.swt.control.multiattribute.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.swt.control.multiattribute.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.view.annotation.feature">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.emfforms.view.annotation.feature.source">
+      <category name="ecp"/>
+   </feature>
+   <feature id="org.eclipse.equinox.sdk">
+      <category name="eclipse"/>
+   </feature>
+   <feature id="org.eclipse.equinox.server.p2">
+      <category name="eclipse"/>
+   </feature>
+   <feature id="org.eclipse.uml2">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.codegen.ecore.ui">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.codegen.ecore.ui.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.common">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.common.edit">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.common.edit.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.common.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.doc">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.doc.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.examples">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.examples.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.sdk">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.sdk.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.uml">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.uml.edit">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.uml.edit.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.uml2.uml.source">
+      <category name="uml2"/>
+   </feature>
+   <feature id="org.eclipse.jst.enterprise_core.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.enterprise_ui.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.enterprise_userdoc.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.web_core.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.web_js_support.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.web_ui.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.web_userdoc.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.ws.cxf.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.ws.jaxws.dom.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.ws.jaxws.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.jst.ws.jaxws_userdoc.feature">
+      <category name="jst"/>
+   </feature>
+   <feature id="org.eclipse.wst.jsdt.chromium.debug.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.wst.server_adapters.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.wst.ws_core.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.wst.ws_ui.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.wst.ws_userdoc.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.wst.xml.xpath2.processor.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.wst.xsl.feature">
+      <category name="wst"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.databinding.runtime.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.databinding.runtime.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.querybasedfeatures.runtime.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.querybasedfeatures.runtime.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.validation.runtime.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.validation.runtime.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.viewers.runtime.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.viewers.runtime.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.viewers.tooling.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.addon.viewers.tooling.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.ide.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.ide.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.language.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.language.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.runtime.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.runtime.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.sdk.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.sdk.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.testing.sdk.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.query.testing.sdk.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.transformation.evm.transactions.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.transformation.evm.transactions.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.transformation.runtime.emf.feature">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.viatra.transformation.runtime.emf.feature.source">
+      <category name="viatra"/>
+   </feature>
+   <feature id="org.eclipse.ocl">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.all">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.all.sdk">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.all.sdk.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.all.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.build">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.build.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.core.sdk">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.core.sdk.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.doc">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.doc.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.edit">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.edit.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.examples">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.examples.classic">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.examples.classic.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.examples.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.examples.unified">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.examples.unified.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.ui">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.ui.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.uml">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.uml.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.unified.core">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.unified.core.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.unified.ui">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.ocl.unified.ui.source">
+      <category name="ocl"/>
+   </feature>
+   <feature id="org.eclipse.lsp4j.sdk">
+      <category name="lsp4j"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.adt">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.doc">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.emftvm">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.emftvm.cdo">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.emftvm.engine">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.emftvm.ui">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.engine">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.examples">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.profiler">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.m2m.atl.sdk">
+      <category name="m2m"/>
+   </feature>
+   <feature id="org.eclipse.swtbot">
+      <category name="swtbot"/>
+   </feature>
+   <feature id="org.eclipse.swtbot.eclipse">
+      <category name="swtbot"/>
+   </feature>
+   <feature id="org.eclipse.swtbot.eclipse.gef">
+      <category name="swtbot"/>
+   </feature>
+   <feature id="org.eclipse.swtbot.forms">
+      <category name="swtbot"/>
+   </feature>
+   <feature id="org.eclipse.swtbot.generator.feature">
+      <category name="swtbot"/>
+   </feature>
+   <feature id="org.eclipse.swtbot.ide">
+      <category name="swtbot"/>
+   </feature>
+   <feature id="org.eclipse.net4j">
+      <category name="net4j"/>
+   </feature>
+   <feature id="org.eclipse.net4j.db">
+      <category name="net4j"/>
+   </feature>
+   <feature id="org.eclipse.net4j.db.h2">
+      <category name="net4j"/>
+   </feature>
+   <feature id="org.eclipse.net4j.examples.installer">
+      <category name="net4j"/>
+   </feature>
+   <feature id="org.eclipse.net4j.util">
+      <category name="net4j"/>
+   </feature>
+   <feature id="org.eclipse.net4j.util.ui">
+      <category name="net4j"/>
+   </feature>
+   <feature id="org.eclipse.passage.lic.agreements.feature">
+      <category name="license"/>
+   </feature>
+   <feature id="org.eclipse.passage.lic.keys.feature">
+      <category name="license"/>
+   </feature>
+   <feature id="org.eclipse.remote">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.remote.console">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.core">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.dstore">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.ftp">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.local">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.ssh">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.telnet">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.rse.useractions">
+      <category name="rse"/>
+   </feature>
+   <feature id="org.eclipse.tm.terminal.connector.remote.feature">
+      <category name="rse"/>
    </feature>
    <bundle id="org.hamcrest">
       <category name="3rdparty"/>
@@ -1354,12 +2266,6 @@
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.axis">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.util.gui">
-      <category name="3rdparty"/>
-   </bundle>
-   <bundle id="org.apache.batik.util.gui.source">
       <category name="3rdparty"/>
    </bundle>
    <bundle id="org.apache.bcel">
@@ -1931,16 +2837,26 @@
          Judo Common Eclipse Packaging Project
       </description>
    </category-def>
+   <category-def name="license" label="License"/>
    <category-def name="asciidoctor" label="Asciidoctor"/>
+   <category-def name="bpmn2" label="BPMN2"/>
+   <category-def name="cdo" label="CDO"/>
+   <category-def name="datatools" label="DataTools"/>
+   <category-def name="dltk" label="Dynamic Language Toolkit"/>
    <category-def name="plantuml" label="PlantUML"/>
    <category-def name="m2e" label="M2E"/>
    <category-def name="acceleo" label="Acceleo"/>
    <category-def name="eclipse" label="Eclipse"/>
    <category-def name="e4" label="E4"/>
    <category-def name="ecf" label="ECF"/>
+   <category-def name="eclemma" label="ECL Emma"/>
+   <category-def name="edapt" label="Edapt"/>
+   <category-def name="ecp" label="EMF Client Platform"/>
    <category-def name="eef" label="Eef"/>
    <category-def name="egit" label="EGit"/>
    <category-def name="emf" label="EMF"/>
+   <category-def name="jst" label="JST"/>
+   <category-def name="wst" label="WST"/>
    <category-def name="xcore" label="XCore"/>
    <category-def name="mwe" label="MWE"/>
    <category-def name="mwe2" label="MWE2"/>
@@ -1951,6 +2867,14 @@
    <category-def name="ansi_console" label="ANSIConsole"/>
    <category-def name="http" label="HTTP"/>
    <category-def name="emf-compare" label="EMF Compare"/>
+   <category-def name="uml2" label="UML2"/>
    <category-def name="genuitec" label="Genuitec"/>
+   <category-def name="viatra" label="VIATRA"/>
+   <category-def name="ocl" label="OCL"/>
+   <category-def name="lsp4j" label="LSP4J"/>
+   <category-def name="m2m" label="Atlanta M2M"/>
+   <category-def name="swtbot" label="SWTBpt"/>
+   <category-def name="net4j" label="NET4J"/>
    <category-def name="3rdparty" label="3rd party plugins"/>
+   <category-def name="rse" label="Terminal and remote system explorer"/>
 </site>
