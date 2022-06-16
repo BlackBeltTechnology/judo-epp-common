@@ -111,15 +111,6 @@ jobs:
           -f ./common-targetdefinition/pom.xml \
           install
 
-      - name: Update category
-        run: |-
-          ./mvnw -B -Dstyle.color=always \
-          -Dtycho.mode=maven \
-          -DskipModules \
-          -P update-category-versions \
-          -f ./common-site/pom.xml \
-          validate
-
       - name: Set tycho version
         run: |-
           ./mvnw -B -Dstyle.color=always \
