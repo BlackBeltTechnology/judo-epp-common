@@ -40,7 +40,7 @@
     </developers>
     
     <properties>
-        <revision>4.23.0-SNAPSHOT</revision>
+        <revision>4.23.1-SNAPSHOT</revision>
         <maven>3.8.3</maven>
         <maven.version>3.8.3</maven.version>
         <tycho-version>2.7.5</tycho-version>
