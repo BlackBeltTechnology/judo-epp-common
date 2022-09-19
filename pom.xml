@@ -8,7 +8,7 @@
     
     <groupId>hu.blackbelt.judo.eclipse.epp</groupId>
     <artifactId>hu.blackbelt.judo.eclipse.epp.common</artifactId>
-    <version>4.12.0-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
     
     <description>Judo Eclipse Packaging Project (EPP) common parent</description>
@@ -22,20 +22,20 @@
     
     <scm>
         <connection>scm:git:git@github.com:${project-repositoryId}.git</connection>
+        <!--suppress UnresolvedMavenProperty -->
         <developerConnection>scm:git:ssh://${git.username}@github.com:${project-repositoryId}.git
         </developerConnection>
         <url>http://github.com/${project-repositoryId}</url>
     </scm>
     
+    <licenses>
+		<license>
+			<name>Eclipse Public License 2.0</name>
+			<url>https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt</url>
+		</license>
+	</licenses>
+
     <developers>
-        <developer>
-            <id>borcsokj</id>
-            <name>Börcsök József</name>
-            <email>jozsef.borcsok@blackbelt.hu</email>
-            <url>https://github.com/borcsokj</url>
-            <organization>BlackBelt Technology</organization>
-            <organizationUrl>http://www.blackbelt.hu</organizationUrl>
-        </developer>
         <developer>
             <id>robson</id>
             <name>Róbert Csákány</name>
@@ -44,41 +44,40 @@
             <organization>BlackBelt Technology</organization>
             <organizationUrl>http://www.blackbelt.hu</organizationUrl>
         </developer>
-        <developer>
-            <id>gprivi</id>
-            <name>Privitzky Gábor</name>
-            <email>gabor.privitzky@blackbelt.hu</email>
-            <url>https://github.com/gprivi</url>
-            <organization>BlackBelt Technology</organization>
-            <organizationUrl>http://www.blackbelt.hu</organizationUrl>
-        </developer>
     </developers>
     
     <properties>
-        <maven.version>3.1.1</maven.version>
-        <tycho.version>1.4.0</tycho.version>
+        <revision>4.23.0</revision>
+        <maven>3.8.3</maven>
+        <maven.version>3.8.3</maven.version>
+        <tycho-version>2.7.5</tycho-version>
+        <!--suppress UnresolvedMavenProperty -->
         <tycho.extras.version>${tycho.version}</tycho.extras.version>
-        <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-eclipse.git</tycho.scmUrl>
+        <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-epp-common.git</tycho.scmUrl>
         <cbi.version>1.1.5</cbi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>http://download.eclipse.org/releases/2019-06</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2022-03</eclipse.release.repository>
         
         <project-shortname>judo-epp-common</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-epp-common</project-repositoryId>
         
+        <!-- Code Quality-->
+		<sonar-maven-plugin-version>3.9.1.2184</sonar-maven-plugin-version>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<sonar.language>java</sonar.language>
+		<sonar.java.source>${java.version}</sonar.java.source>
+		<jacoco.version>0.8.8</jacoco.version>
+
     </properties>
     <prerequisites>
         <maven>${maven.version}</maven>
     </prerequisites>
     
-    <modules>
-        <module>common</module>
-        <module>common-feature</module>
-        <module>common-site</module>
-    </modules>
+    <!-- 
     <pluginRepositories>
         <pluginRepository>
             <id>eclipse-tycho</id>
@@ -89,8 +88,9 @@
             <url>https://repo.eclipse.org/content/groups/cbi/</url>
         </pluginRepository>
     </pluginRepositories>
-    
+    -->
     <repositories>
+        <!--
         <repository>
             <id>eclipse-release</id>
             <layout>p2</layout>
@@ -99,31 +99,32 @@
 
         <repository>
             <id>license-feature</id>
-            <url>http://download.eclipse.org/cbi/updates/license/</url>
+            <url>https://download.eclipse.org/cbi/updates/license/</url>
             <layout>p2</layout>
         </repository>
+        -->
 <!--
         <repository>
             <id>emfatic</id>
-            <url>http://download.eclipse.org/emfatic/update</url>
+            <url>https://download.eclipse.org/emfatic/update</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>epsilon</id>
-            <url>http://download.eclipse.org/epsilon/updates</url>
+            <url>https://download.eclipse.org/epsilon/updates</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>m2e</id>
-            <url>http://download.eclipse.org/technology/m2e/releases/1.11</url>
+            <url>https://download.eclipse.org/technology/m2e/releases/1.11</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>sirius</id>
-            <url>http://download.eclipse.org/sirius/updates/releases/6.1.2/photon</url>
+            <url>https://download.eclipse.org/sirius/updates/releases/6.1.2/photon</url>
             <layout>p2</layout>
         </repository>
 
@@ -141,25 +142,25 @@
         
         <repository>
             <id>xtext</id>
-            <url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.17.0/</url>
+            <url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.17.0/</url>
             <layout>p2</layout>
         </repository>
         
         <repository>
             <id>emf</id>
-            <url>http://download.eclipse.org/modeling/emf/emf/builds/release/2.17/</url>
+            <url>https://download.eclipse.org/modeling/emf/emf/builds/release/2.17/</url>
             <layout>p2</layout>
         </repository>
         
         <repository>
             <id>mwe2</id>
-            <url>http://download.eclipse.org/modeling/emft/mwe/updates/releases/2.10.0/</url>
+            <url>https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.10.0/</url>
             <layout>p2</layout>
         </repository>
         
         <repository>
             <id>xpand</id>
-            <url>http://download.eclipse.org/modeling/m2t/xpand/updates/releases/R201605260315</url>
+            <url>https://download.eclipse.org/modeling/m2t/xpand/updates/releases/R201605260315</url>
             <layout>p2</layout>
         </repository>
         
@@ -242,20 +243,23 @@
                      <optionalDependencies>ignore</optionalDependencies>
                      </dependency-resolution>
                      -->
-                    <!--
                     <target>
                         <artifact>
 						    <groupId>hu.blackbelt.judo.eclipse.epp</groupId>
-						    <artifactId>hu.blackbelt.judo.eclipse.epp-targetdefinition</artifactId>
+						    <artifactId>hu.blackbelt.judo.eclipse.epp.package.common.targetdefinition</artifactId>
                             <version>${project.version}</version>
                         </artifact>
                     </target>
-                    -->
                      <environments>
                         <environment>
                             <os>linux</os>
                             <ws>gtk</ws>
                             <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>aarch64</arch>
                         </environment>
                         <environment>
                             <os>win32</os>
@@ -267,10 +271,17 @@
                             <ws>cocoa</ws>
                             <arch>x86_64</arch>
                         </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>aarch64</arch>
+                        </environment>
+
                     </environments>
                 </configuration>
             </plugin>
             
+        <!--
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-packaging-plugin</artifactId>
@@ -288,19 +299,18 @@
                 </dependencies>
                 <configuration>
                     <timestampProvider>jgit</timestampProvider>
-                    <jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
                     <format>yyyyMMdd-HHmm</format>
                     <sourceReferences>
                         <generate>true</generate>
                     </sourceReferences>
                 </configuration>
             </plugin>
-
+        -->
 
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-p2-plugin</artifactId>
-                <version>${tycho.version}</version>
+                <version>${tycho-version}</version>
                 <executions>
                     <execution>
                         <id>attach-p2-metadata</id>
@@ -312,6 +322,70 @@
                 </executions>
             </plugin>
             
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <version>1.1.0</version>
+                <configuration>
+                    <updatePomFile>true</updatePomFile>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>flatten</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>flatten</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>flatten.clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco.version}</version>
+				<configuration>
+					<propertyName>jacoco.agent</propertyName>
+				</configuration>
+				<executions>
+					<execution>
+						<id>jacoco-initialize</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-report</id>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
         </plugins>
         
         <pluginManagement>
@@ -319,12 +393,12 @@
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-maven-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-versions-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -334,23 +408,23 @@
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>target-platform-configuration</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-compiler-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-packaging-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <!--
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-p2-repository-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                     <configuration>
                         <includeAllDependencies>true</includeAllDependencies>
                         <compress>true</compress>
@@ -376,12 +450,12 @@
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-surefire-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-source-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                     <configuration>
                         <archive>
                             <addMavenDescriptor>false</addMavenDescriptor>
@@ -409,7 +483,7 @@
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-p2-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.eclipse.cbi.maven.plugins</groupId>
@@ -443,13 +517,13 @@
                 <plugin>
                     <groupId>org.eclipse.tycho.extras</groupId>
                     <artifactId>tycho-p2-extras-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                 </plugin>
                 <!--
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-p2-director-plugin</artifactId>
-                    <version>${tycho.version}</version>
+                    <version>${tycho-version}</version>
                     <executions>
                         <execution>
                             <id>materialize-products</id>
@@ -485,6 +559,7 @@
                     </configuration>
                 </plugin>
                  -->
+                <!--
 				<plugin>
 					<groupId>name.abuchen</groupId>
 					<artifactId>fix-info-plist-maven-plugin</artifactId>
@@ -521,6 +596,7 @@
 						</properties>			
 					</configuration>
 				</plugin>
+				-->
 <!-- 
 				<plugin>
 					<groupId>hu.blackbelt.judo.eclipse.epp</groupId>
@@ -537,11 +613,13 @@
 					</executions>
 				</plugin>
 				-->
+                <!--
                 <plugin>
                     <groupId>org.eclipse.cbi.maven.plugins</groupId>
                     <artifactId>eclipse-dmg-packager</artifactId>
                     <version>${cbi.version}</version>
                 </plugin>
+                -->
 <!--
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -592,6 +670,25 @@
                                         <ignore></ignore>
                                     </action>
                                 </pluginExecution>
+                                <pluginExecution>
+                                	<pluginExecutionFilter>
+                                		<groupId>
+                                			org.eclipse.tycho
+                                		</groupId>
+                                		<artifactId>
+                                			target-platform-configuration
+                                		</artifactId>
+                                		<versionRange>
+                                			[2.5.0,)
+                                		</versionRange>
+                                		<goals>
+                                			<goal>target-platform</goal>
+                                		</goals>
+                                	</pluginExecutionFilter>
+                                	<action>
+                                		<ignore></ignore>
+                                	</action>
+                                </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
                     </configuration>
@@ -605,195 +702,269 @@
             <id>modules</id>
             <activation>
                 <property>
-                    <name>github_release</name>
+                    <name>skipModules</name>
                     <value>!true</value>
                 </property>
             </activation>
             <modules>
+                <module>common-targetdefinition</module>
                 <module>common</module>
                 <module>common-feature</module>
                 <module>common-site</module>
             </modules>
         </profile>
         
-        <profile>
-            <id>sign-artifacts</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.6</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                                <configuration>
-                                    <keyname>${gpg.keyname}</keyname>
-                                    <passphraseServerId>${gpg.keyname}</passphraseServerId>
-                                    <!-- This is necessary for gpg to not try to use the pinentry programs -->
-                                    <gpgArguments>
-                                        <arg>--pinentry-mode</arg>
-                                        <arg>loopback</arg>
-                                    </gpgArguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        
-        <profile>
-            <id>release-dummy</id>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>dummy-distribution</id>
-                    <url>file:///tmp/maven-snapshot/</url>
-                </snapshotRepository>
-                <repository>
-                    <id>dummy-distribution</id>
-                    <url>file:///tmp/maven-release/</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-        
-        <profile>
-            <id>release-blackbelt</id>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>blackbelt-nexus-distribution</id>
-                    <url>https://nexus.blackbelt.cloud/repository/maven-judo-release/</url>
-                </snapshotRepository>
-                <repository>
-                    <id>blackbelt-nexus-distribution</id>
-                    <url>https://nexus.blackbelt.cloud/repository/maven-judo-release/</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-        
-        <profile>
-            <id>release-central</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                        </configuration>
-                    </plugin>
-                    
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <goals>
-                                    <goal>jar-no-fork</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-                </snapshotRepository>
-                <repository>
-                    <id>ossrh</id>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-        
-        <profile>
-            <id>release-github</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>de.jutzig</groupId>
-                        <artifactId>github-release-plugin</artifactId>
-                        <version>1.3.0</version>
-                        <inherited>false</inherited>
-                        <configuration>
-                            <repositoryId>${project-repositoryId}</repositoryId>
-                            <description>
-                                **Branch:** ${env.WERCKER_GIT_BRANCH}
-                                **P2 Update Site:** https://nexus.blackbelt.cloud/repository/p2-judo/${project-shortname}/${project.version}
-                                **Maven repository:** https://nexus.blackbelt.cloud/#browse/browse:maven-judo-release:hu%2Fblackbelt%2Feclipse%2F${project-shortname}
-                                **Wercker:** https://app.wercker.com/${project-repositoryId}/runs/build/${env.WERCKER_RUN_ID}
-                            </description>
-                            <releaseName>${project.version}</releaseName>
-                            <prerelease>true</prerelease>
-                            <tag>${project.version}</tag>
-                            <deleteRelease>true</deleteRelease>
-                            <commitish>${env.WERCKER_GIT_COMMIT}</commitish>
-                            <fileSets>
-                                <fileSet>
-                                    <directory>${basedir}/common/target</directory>
-                                    <includes>
-                                        <include>*.jar</include>
-                                    </includes>
-                                </fileSet>
-                                <fileSet>
-                                    <directory>${basedir}/common-site/target</directory>
-                                    <includes>
-                                        <include>*.zip</include>
-                                    </includes>
-                                </fileSet>
-                            </fileSets>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>release-to-github</id>
-                                <phase>deploy</phase>
-                                <goals>
-                                    <goal>release</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        
-        <profile>
-            <id>release-p2-blackbelt</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>wagon-maven-plugin</artifactId>
-                        <version>2.0.0</version>
-                        <executions>
-                            <execution>
-                                <id>upload-respoitory</id>
-                                <phase>deploy</phase>
-                                <goals>
-                                    <goal>upload</goal>
-                                </goals>
-                                <configuration>
-                                    <serverId>blackbelt-nexus-distribution</serverId>
-                                    <fromDir>${basedir}/site/target/repository</fromDir>
-                                    <includes>*/**</includes>
-                                    <url>dav:https://nexus.blackbelt.cloud/repository/p2-judo</url>
-                                    <toDir>${project-shortname}/${project.version}</toDir>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
+		<profile>
+			<id>sign-artifacts</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.simplify4u.plugins</groupId>
+						<artifactId>sign-maven-plugin</artifactId>
+						<version>1.0.1</version>
+						<executions>
+							<execution>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>release-dummy</id>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>dummy-distribution</id>
+					<url>file:///tmp/${project.groupId}-${project.artifactId}-${project.version}/maven-snapshot/</url>
+				</snapshotRepository>
+				<repository>
+					<id>dummy-distribution</id>
+					<url>file:///tmp/${project.groupId}-${project.artifactId}-${project.version}/maven-release/</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+
+		<profile>
+			<id>release-judong</id>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>judong-nexus-distribution</id>
+					<!--suppress UnresolvedMavenProperty -->
+					<url>https://nexus.judo.technology/repository/maven-judong-snapshots/</url>
+				</snapshotRepository>
+				<repository>
+					<id>judong-nexus-distribution</id>
+					<!--suppress UnresolvedMavenProperty -->
+					<url>https://nexus.judo.technology/repository/maven-judong-snapshots/</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+
+		<profile>
+			<id>release-central</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>ossrh</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>ossrh</id>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+				</snapshotRepository>
+				<repository>
+					<id>ossrh</id>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+
+		<profile>
+			<id>release-p2-judong</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>wagon-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>upload-repository</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>upload</goal>
+								</goals>
+								<configuration>
+									<serverId>judong-nexus-distribution</serverId>
+									<fromDir>${basedir}/site/target/repository</fromDir>
+									<includes>*/**</includes>
+									<url>dav:https://nexus.judo.technology/repository/p2-judong/</url>
+									<toDir>${project-shortname}/${project.version}</toDir>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>generate-github-asciidoc-diagrams</id>
+
+			<properties>
+				<asciidoctor.maven.plugin.version>2.2.2</asciidoctor.maven.plugin.version>
+				<asciidoctorj.version>2.5.5</asciidoctorj.version>
+				<asciidoctorj.diagram.version>2.2.3</asciidoctorj.diagram.version>
+				<jruby.version>9.3.4.0</jruby.version>
+			</properties>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctor-maven-plugin</artifactId>
+						<version>${asciidoctor.maven.plugin.version}</version>
+						<dependencies>
+							<!-- Comment this section to use the default jruby artifact provided by the plugin -->
+							<dependency>
+								<groupId>org.jruby</groupId>
+								<artifactId>jruby-complete</artifactId>
+								<version>${jruby.version}</version>
+							</dependency>
+							<!-- Comment this section to use the default AsciidoctorJ artifact provided by the plugin -->
+							<dependency>
+								<groupId>org.asciidoctor</groupId>
+								<artifactId>asciidoctorj</artifactId>
+								<version>${asciidoctorj.version}</version>
+							</dependency>
+							<dependency>
+								<groupId>org.asciidoctor</groupId>
+								<artifactId>asciidoctorj-diagram</artifactId>
+								<version>${asciidoctorj.diagram.version}</version>
+							</dependency>
+							<!-- Since asciidoctorj-diagram v2.2.0, uncomment to use specific version of plantuml or ditaa -->
+							<dependency>
+								<groupId>org.asciidoctor</groupId>
+								<artifactId>asciidoctorj-diagram-plantuml</artifactId>
+								<version>1.2022.5</version>
+							</dependency>
+							<dependency>
+								<groupId>org.asciidoctor</groupId>
+								<artifactId>asciidoctorj-diagram-ditaamini</artifactId>
+								<version>1.0.0</version>
+							</dependency>
+						</dependencies>
+						<configuration>
+							<sourceDirectory>./.github</sourceDirectory>
+							<requires>
+								<require>asciidoctor-diagram</require>
+							</requires>
+							<attributes>
+								<!-- Example below shows how to specify in this pom instead of System's PATH, the location of dot command of Graphviz, required by PlantUML libraries -->
+								<!-- Windows:
+                                    <graphvizdot>C:\Program Files (x86)\Graphviz2.38\bin\dot.exe</graphvizdot>
+                                -->
+								<!-- *nix :
+                                    <graphvizdot>/usr/local/bin/dot</graphvizdot>
+                                -->
+							</attributes>
+						</configuration>
+						<executions>
+							<execution>
+								<id>generate-html-doc</id>
+								<phase>generate-resources</phase>
+								<goals>
+									<goal>process-asciidoc</goal>
+								</goals>
+								<configuration>
+									<backend>html5</backend>
+									<attributes>
+										<imagesdir>./images</imagesdir>
+										<toc>left</toc>
+										<icons>font</icons>
+										<sectanchors>true</sectanchors>
+										<idprefix/>
+										<idseparator>-</idseparator>
+									</attributes>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-resources-plugin</artifactId>
+						<version>3.3.0</version>
+						<executions>
+							<execution>
+								<id>copy-generated-gitflow-diagrams</id>
+								<phase>generate-resources</phase>
+								<goals>
+									<goal>copy-resources</goal>
+								</goals>
+
+								<configuration>
+									<outputDirectory>${basedir}/.github</outputDirectory>
+									<resources>
+										<resource>
+											<directory>${basedir}/target/generated-docs/images/</directory>
+											<includes>
+												<include>*.png</include>
+											</includes>
+										</resource>
+									</resources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>update-source-code-license</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>license-maven-plugin</artifactId>
+						<version>2.0.0</version>
+						<configuration>
+							<verbose>true</verbose>
+							<addSvnKeyWords>false</addSvnKeyWords>
+							<organizationName>BlackBelt Technology</organizationName>
+							<inceptionYear>2018</inceptionYear>
+						</configuration>
+						<executions>
+							<execution>
+								<id>first</id>
+								<goals>
+									<goal>update-file-header</goal>
+								</goals>
+								<phase>process-sources</phase>
+								<configuration>
+									<licenseName>apache_v2</licenseName>
+									<roots>
+										<root>src/main/java</root>
+										<root>src/test</root>
+									</roots>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
     </profiles>
 </project>
