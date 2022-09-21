@@ -85,7 +85,7 @@ jobs:
             BASE_VERSION=${POM_VERSION}
           fi
           if [[ "${{ github.base_ref }}" == "master" ]]; then
-            VERSION_NUMBER=${BASE_VERSION}.$(date +%Y%m%d_%H%M%S)
+            VERSION_NUMBER=${BASE_VERSION}
           else
             TAG_NAME=$(echo "${{ steps.context.outputs.branch }}" | cut -d ' ' -f2 | tr '#\/\.-' '_')
             VERSION_NUMBER=${BASE_VERSION}.$(date +%Y%m%d_%H%M%S)_${{ steps.context.outputs.shortCommitId }}_${TAG_NAME//[(\)]}
@@ -142,7 +142,8 @@ jobs:
           -Dmaven.test.skip=true \
           deploy
 
-      - name: Release P2 (parallel uoload)
+      # Phase 3 - Deploy to P2
+      - name: 🎁 Release P2 (parallel uoload)
         run: |-
           export BASE_URL=https://nexus.judo.technology/repository/p2-judong/judo-epp-common/${{ steps.version.outputs.version }}
           export REPOSITORY_DIR=./common-site/target/repository
@@ -169,7 +170,7 @@ jobs:
 #        continue-on-error: true
 #        run: |-
 #          ./mvnw -B -Dstyle.color=always \
-#          -Dsonar.projectKey=epsilon-runtime-eclipse \
+#          -Dsonar.projectKey=judo-epp-common \
 #          -Dsonar.host.url=https://sonar.judo.technology \
 #          -Dsonar.login=${{ secrets.JUDO_SONAR_TOKEN }} \
 #          sonar:sonar
