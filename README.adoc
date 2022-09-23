@@ -16,7 +16,7 @@ It is a mirror site of Eclipse to build JUDO Eclipse based products
 
 == Contributing to the project
 
-Everyone is welcome to contribute to epsilon-runtime! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
+Everyone is welcome to contribute to judo-epp-common! As a starter, please read the corresponding link:CONTRIBUTING.adoc[CONTRIBUTING] guide for details!
 
 
 == License
