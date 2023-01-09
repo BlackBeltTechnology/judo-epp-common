@@ -131,13 +131,13 @@
             <url>https://aneesh-joseph.github.io/m2e-maven-dependency-plugin/</url>
             <layout>p2</layout>
         </repository>
-        <!--
+
         <repository>
             <id>eclipse-emfatic</id>
             <url>https://download.eclipse.org/emfatic/update-18032020/</url>
             <layout>p2</layout>
         </repository>
-        -->
+
         <repository>
             <id>asciidoctor</id>
             <url>https://de-jcup.github.io/update-site-eclipse-asciidoctor-editor/update-site/</url>
@@ -149,36 +149,13 @@
             <url>http://www.mihai-nita.net/eclipse</url>
             <layout>p2</layout>
         </repository>
-        <!--
-        <repository>
-            <id>eclipse-orbit-old</id>
-            <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20200224183213/repository</url>
-            <layout>p2</layout>
-        </repository>
--->
+
         <repository>
             <id>eclipse-orbit</id>
             <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository/</url>
             <layout>p2</layout>
         </repository>
-<!--
-        <repository>
-            <id>eclipse-egit</id>
-            <url>https://download.eclipse.org/egit/updates/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>eclipse-m2e-tycho</id>
-            <url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/</url>
-            <layout>p2</layout>
-        </repository>
 
-        <repository>
-            <id>eclipse-m2e-chromatic</id>
-            <url>https://sidespin.github.io/m2e-chromatic/update/</url>
-            <layout>p2</layout>
-        </repository>
-        -->
         <repository>
             <id>plantuml</id>
             <url>https://hallvard.github.io/plantuml/plantuml.eclipse/1.1.27-SNAPSHOT/</url>
@@ -191,45 +168,17 @@
             <layout>p2</layout>
         </repository>
 
-
         <repository>
-            <id>jetty</id>
-            <url>mvn:org.eclipse.jetty:jetty-p2:11.0.9:zip:p2site</url>
+            <id>emfjson-jackson</id>
+            <url>https://download.eclipse.org/emfcloud/emfjson-jackson/p2/releases/2.2.0/</url>
             <layout>p2</layout>
         </repository>
 
-
-        <!--
-        <repository>
-            <id>eclipse-mylyn</id>
-            <url>https://download.eclipse.org/mylyn/releases/3.25/</url>
-            <layout>p2</layout>
-        </repository>
-
-        <repository>
-            <id>eclipse-emf-compare</id>
-            <url>https://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/R202211161457/</url>
-            <layout>p2</layout>
-        </repository>
-
-        <repository>
-            <id>eclipse-lsp4e</id>
-            <url>http://download.eclipse.org/lsp4e/releases/0.21.0/</url>
-            <layout>p2</layout>
-        </repository>
--->
         <repository>
             <id>justj</id>
             <url>https://download.eclipse.org/justj/jres/17/updates/release/</url>
             <layout>p2</layout>
         </repository>
-        <!--
-        <repository>
-            <id>justj-epp</id>
-            <url>https://download.eclipse.org/justj/epp/milestone/latest/</url>
-            <layout>p2</layout>
-        </repository>
-        -->
     </repositories>
  
     <build>
@@ -247,7 +196,6 @@
                 <configuration>
                     <includePackedArtifacts>true</includePackedArtifacts>
                     <resolveWithExecutionEnvironmentConstraints>false</resolveWithExecutionEnvironmentConstraints>
-<!--                    <executionEnvironment>JavaSE-17</executionEnvironment> -->
                     <!-- The Parallel Package feature.xml includes a number of other
                      features that are marked as optional, and unfortunately they
                      seem to be missing in Mars. Ignoring these options features
@@ -256,15 +204,6 @@
                      <optionalDependencies>ignore</optionalDependencies>
                      </dependency-resolution>
                      -->
-                    <!--
-                    <target>
-                        <artifact>
-						    <groupId>hu.blackbelt.judo.eclipse.epp</groupId>
-						    <artifactId>hu.blackbelt.judo.eclipse.epp.package.common.targetdefinition</artifactId>
-                            <version>${project.version}</version>
-                        </artifact>
-                    </target>
-                    -->
                      <environments>
                         <environment>
                             <os>linux</os>
@@ -291,48 +230,10 @@
                             <ws>cocoa</ws>
                             <arch>aarch64</arch>
                         </environment>
-
                     </environments>
-<!--
-                    <dependency-resolution>
-                        <extraRequirements>
-                            <requirement>
-                                <type>eclipse-plugin</type>
-                                <id>org.apache.commons.logging</id>
-                                <versionRange>0.0.0</versionRange>
-                            </requirement>
-                        </extraRequirements>
-                    </dependency-resolution>
--->
                 </configuration>
             </plugin>
             
-        <!--
-            <plugin>
-                <groupId>org.eclipse.tycho</groupId>
-                <artifactId>tycho-packaging-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.eclipse.tycho.extras</groupId>
-                        <artifactId>tycho-buildtimestamp-jgit</artifactId>
-                        <version>${tycho.extras.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.eclipse.tycho.extras</groupId>
-                        <artifactId>tycho-sourceref-jgit</artifactId>
-                        <version>${tycho.extras.version}</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <timestampProvider>jgit</timestampProvider>
-                    <format>yyyyMMdd-HHmm</format>
-                    <sourceReferences>
-                        <generate>true</generate>
-                    </sourceReferences>
-                </configuration>
-            </plugin>
-        -->
-
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-p2-plugin</artifactId>
@@ -446,34 +347,6 @@
                     <artifactId>tycho-packaging-plugin</artifactId>
                     <version>${tycho-version}</version>
                 </plugin>
-                <!--
-                <plugin>
-                    <groupId>org.eclipse.tycho</groupId>
-                    <artifactId>tycho-p2-repository-plugin</artifactId>
-                    <version>${tycho-version}</version>
-                    <configuration>
-                        <includeAllDependencies>true</includeAllDependencies>
-                        <compress>true</compress>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>default-assemble-repository</id>
-                            <phase></phase>
-                            <configuration>
-                                <skip>true</skip>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>default-archive-repository</id>
-                            <phase></phase>
-                            <configuration>
-                                <skip>true</skip>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-                    -->
-
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-surefire-plugin</artifactId>
@@ -546,134 +419,7 @@
                     <artifactId>tycho-p2-extras-plugin</artifactId>
                     <version>${tycho-version}</version>
                 </plugin>
-                <!--
-                <plugin>
-                    <groupId>org.eclipse.tycho</groupId>
-                    <artifactId>tycho-p2-director-plugin</artifactId>
-                    <version>${tycho-version}</version>
-                    <executions>
-                        <execution>
-                            <id>materialize-products</id>
-                            <goals>
-                                <goal>materialize-products</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>archive-products</id>
-                            <phase>integration-test</phase>
-                            <goals>
-                                <goal>archive-products</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <formats>
-                            <linux>tar.gz</linux>
-                            <macosx>tar.gz</macosx>
-                            <win32>zip</win32>
-                        </formats>
-                        <products>
-                            <product>
-                                <id>${project.artifactId}</id>
-                                <rootFolder>judo</rootFolder>
-                                <rootFolders>
-                                    <macosx>JudoEclipse.app</macosx>
-                                </rootFolders>
-                                <archiveFileName>judo-eclipse_${project.version}</archiveFileName>
-                            </product>
-                        </products>
-                        <profile>${project.artifactId}</profile>
-                    </configuration>
-                </plugin>
-                 -->
-                <!--
-				<plugin>
-					<groupId>name.abuchen</groupId>
-					<artifactId>fix-info-plist-maven-plugin</artifactId>
-					<version>1.5</version>
-					<executions>
-						<execution>
-							<id>fix-info-plist</id>
-							<phase>package</phase>
-							<goals>
-								<goal>fix-info-plist</goal>
-							</goals>
-						</execution>
-					</executions>
-					<configuration>
-						<productId>${project.artifactId}</productId>
-						<appName>JudoEclipse.app</appName>
-						<properties>
-							<property>
-								<name>CFBundleGetInfoString</name>
-								<value>Copyright BlackBelt Technology</value>
-							</property>
-							<property>
-								<name>CFBundleIconFile</name>
-								<value>judo-icon256.icns</value>
-							</property>
-							<property>
-								<name>CFBundleName</name>
-								<value>Judo Modeling</value>
-							</property>
-							<property>
-								<name>CFBundleDisplayName</name>
-								<value>Judo Modeling</value>
-							</property>
-						</properties>			
-					</configuration>
-				</plugin>
-				-->
-<!-- 
-				<plugin>
-					<groupId>hu.blackbelt.judo.eclipse.epp</groupId>
-					<artifactId>eclipse-ini-patcher</artifactId>
-					<version>${project.version}</version>
-					<executions>
-						<execution>
-							<id>materialize-products</id>
-							<phase>package</phase>
-							<goals>
-								<goal>patch-ini-file</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-				-->
-                <!--
-                <plugin>
-                    <groupId>org.eclipse.cbi.maven.plugins</groupId>
-                    <artifactId>eclipse-dmg-packager</artifactId>
-                    <version>${cbi.version}</version>
-                </plugin>
-                -->
-<!--
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-antrun-plugin</artifactId>
-                    <version>1.6</version>
-                    <executions>
-                        <execution>
-                            <id>copy-zips-to-archive-folder</id>
-                            <phase>pre-integration-test</phase>
-                            <configuration>
-                                <target>
-                                    <copy todir="${basedir}/../../archive">
-                                        <fileset dir="${project.build.directory}/products">
-                                            <include name="*.zip" />
-                                            <include name="*linux*.tar.gz" />
-                                            <include name="*.dmg" />
-                                        </fileset>
-                                    </copy>
-                                </target>
-                            </configuration>
-                            <goals>
-                                <goal>run</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
--->
+
                 <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
                 <plugin>
                     <groupId>org.eclipse.m2e</groupId>
@@ -820,34 +566,6 @@
 					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
-		</profile>
-
-		<profile>
-			<id>release-p2-judong</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>wagon-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>upload-repository</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>upload</goal>
-								</goals>
-								<configuration>
-									<serverId>judong-nexus-distribution</serverId>
-									<fromDir>${basedir}/site/target/repository</fromDir>
-									<includes>*/**</includes>
-									<url>dav:https://nexus.judo.technology/repository/p2-judong/</url>
-									<toDir>${project-shortname}/${project.version}</toDir>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
 		</profile>
 
 		<profile>
