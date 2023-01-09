@@ -47,7 +47,7 @@
     </developers>
     
     <properties>
-        <revision>4.23.2-SNAPSHOT</revision>
+        <revision>4.26.0-SNAPSHOT</revision>
         <maven>3.8.3</maven>
         <maven.version>3.8.3</maven.version>
         <tycho-version>2.7.5</tycho-version>
@@ -59,7 +59,7 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2022-03</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2022-12</eclipse.release.repository>
         
         <project-shortname>judo-epp-common</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-epp-common</project-repositoryId>
@@ -76,8 +76,8 @@
     <prerequisites>
         <maven>${maven.version}</maven>
     </prerequisites>
-    
-    <!-- 
+
+
     <pluginRepositories>
         <pluginRepository>
             <id>eclipse-tycho</id>
@@ -88,137 +88,148 @@
             <url>https://repo.eclipse.org/content/groups/cbi/</url>
         </pluginRepository>
     </pluginRepositories>
-    -->
+
     <repositories>
-        <!--
         <repository>
-            <id>eclipse-release</id>
+            <id>eclipse-licenser</id>
+            <url>https://download.eclipse.org/cbi/updates/license</url>
             <layout>p2</layout>
-            <url>${eclipse.release.repository}</url>
         </repository>
 
         <repository>
-            <id>license-feature</id>
-            <url>https://download.eclipse.org/cbi/updates/license/</url>
+            <id>eclipse-release</id>
+            <url>https://download.eclipse.org/releases/2022-12</url>
+            <layout>p2</layout>
+        </repository>
+
+        <!--
+        <repository>
+            <id>cdt</id>
+            <url>https://download.eclipse.org/tools/cdt/releases/11.0</url>
             <layout>p2</layout>
         </repository>
         -->
+        <repository>
+            <id>eclipse-sirius-release</id>
+            <url>https://download.eclipse.org/sirius/updates/releases/7.0.6/2021-06/</url>
+            <layout>p2</layout>
+        </repository>
+
+        <repository>
+            <id>eclipse-m2e</id>
+            <url>https://download.eclipse.org/technology/m2e/releases/2.1.2 </url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>eclipse-m2e-dependencies</id>
+            <url>https://ianbrandt.github.io/m2e-maven-dependency-plugin</url>
+            <layout>p2</layout>
+        </repository>
+
+        <repository>
+            <id>eclipse-m2e-dependencies-2</id>
+            <url>https://aneesh-joseph.github.io/m2e-maven-dependency-plugin/</url>
+            <layout>p2</layout>
+        </repository>
+        <!--
+        <repository>
+            <id>eclipse-emfatic</id>
+            <url>https://download.eclipse.org/emfatic/update-18032020/</url>
+            <layout>p2</layout>
+        </repository>
+        -->
+        <repository>
+            <id>asciidoctor</id>
+            <url>https://de-jcup.github.io/update-site-eclipse-asciidoctor-editor/update-site/</url>
+            <layout>p2</layout>
+        </repository>
+
+        <repository>
+            <id>color-console</id>
+            <url>http://www.mihai-nita.net/eclipse</url>
+            <layout>p2</layout>
+        </repository>
+        <!--
+        <repository>
+            <id>eclipse-orbit-old</id>
+            <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20200224183213/repository</url>
+            <layout>p2</layout>
+        </repository>
+-->
+        <repository>
+            <id>eclipse-orbit</id>
+            <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository/</url>
+            <layout>p2</layout>
+        </repository>
 <!--
         <repository>
-            <id>emfatic</id>
-            <url>https://download.eclipse.org/emfatic/update</url>
+            <id>eclipse-egit</id>
+            <url>https://download.eclipse.org/egit/updates/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>eclipse-m2e-tycho</id>
+            <url>https://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201811261502/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
-            <id>epsilon</id>
-            <url>https://download.eclipse.org/epsilon/updates</url>
+            <id>eclipse-m2e-chromatic</id>
+            <url>https://sidespin.github.io/m2e-chromatic/update/</url>
+            <layout>p2</layout>
+        </repository>
+        -->
+        <repository>
+            <id>plantuml</id>
+            <url>https://hallvard.github.io/plantuml/plantuml.eclipse/1.1.27-SNAPSHOT/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
-            <id>m2e</id>
-            <url>https://download.eclipse.org/technology/m2e/releases/1.11</url>
+            <id>plantuml-lib</id>
+            <url>https://hallvard.github.io/plantuml/plantuml.lib/1.2022.7/</url>
+            <layout>p2</layout>
+        </repository>
+
+
+        <repository>
+            <id>jetty</id>
+            <url>mvn:org.eclipse.jetty:jetty-p2:11.0.9:zip:p2site</url>
+            <layout>p2</layout>
+        </repository>
+
+
+        <!--
+        <repository>
+            <id>eclipse-mylyn</id>
+            <url>https://download.eclipse.org/mylyn/releases/3.25/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
-            <id>sirius</id>
-            <url>https://download.eclipse.org/sirius/updates/releases/6.1.2/photon</url>
+            <id>eclipse-emf-compare</id>
+            <url>https://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/R202211161457/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
-            <id>m2e-connectors</id>
-            <url>http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.8.1/N/0.8.1.201704211436/</url>
+            <id>eclipse-lsp4e</id>
+            <url>http://download.eclipse.org/lsp4e/releases/0.21.0/</url>
             <layout>p2</layout>
         </repository>
-
+-->
         <repository>
-            <id>m2e-tycho-utilities</id>
-            <url>http://www.ancitconsulting.com/tycho-utils/</url>
+            <id>justj</id>
+            <url>https://download.eclipse.org/justj/jres/17/updates/release/</url>
             <layout>p2</layout>
         </repository>
-        
+        <!--
         <repository>
-            <id>xtext</id>
-            <url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.17.0/</url>
+            <id>justj-epp</id>
+            <url>https://download.eclipse.org/justj/epp/milestone/latest/</url>
             <layout>p2</layout>
         </repository>
-        
-        <repository>
-            <id>emf</id>
-            <url>https://download.eclipse.org/modeling/emf/emf/builds/release/2.17/</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>mwe2</id>
-            <url>https://download.eclipse.org/modeling/emft/mwe/updates/releases/2.10.0/</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>xpand</id>
-            <url>https://download.eclipse.org/modeling/m2t/xpand/updates/releases/R201605260315</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>emfbuildergenerator</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/emfbuildergenerator/${emfbuildergenerator-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-esm</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-esm//${judo-meta-esm-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-psm</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-psm//${judo-meta-psm-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-psm-jql</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-psm-jql//${judo-meta-psm-jql-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-rdbms</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-rdbms//${judo-meta-rdbms-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-openapi</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-openapi//${judo-meta-openapi-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-liquibase</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-liquibase//${judo-meta-liquibase-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-expression</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-expression//${judo-meta-expression-version}</url>
-            <layout>p2</layout>
-        </repository>
-        
-        <repository>
-            <id>judo-meta-measure</id>
-            <url>https://nexus.blackbelt.cloud/repository/p2-judo/judo-meta-measure//${judo-meta-measure-version}</url>
-            <layout>p2</layout>
-        </repository>
- -->
-
+        -->
     </repositories>
  
     <build>
@@ -235,6 +246,8 @@
                 <artifactId>target-platform-configuration</artifactId>
                 <configuration>
                     <includePackedArtifacts>true</includePackedArtifacts>
+                    <resolveWithExecutionEnvironmentConstraints>false</resolveWithExecutionEnvironmentConstraints>
+<!--                    <executionEnvironment>JavaSE-17</executionEnvironment> -->
                     <!-- The Parallel Package feature.xml includes a number of other
                      features that are marked as optional, and unfortunately they
                      seem to be missing in Mars. Ignoring these options features
@@ -243,6 +256,7 @@
                      <optionalDependencies>ignore</optionalDependencies>
                      </dependency-resolution>
                      -->
+                    <!--
                     <target>
                         <artifact>
 						    <groupId>hu.blackbelt.judo.eclipse.epp</groupId>
@@ -250,6 +264,7 @@
                             <version>${project.version}</version>
                         </artifact>
                     </target>
+                    -->
                      <environments>
                         <environment>
                             <os>linux</os>
@@ -278,6 +293,17 @@
                         </environment>
 
                     </environments>
+<!--
+                    <dependency-resolution>
+                        <extraRequirements>
+                            <requirement>
+                                <type>eclipse-plugin</type>
+                                <id>org.apache.commons.logging</id>
+                                <versionRange>0.0.0</versionRange>
+                            </requirement>
+                        </extraRequirements>
+                    </dependency-resolution>
+-->
                 </configuration>
             </plugin>
             
@@ -446,7 +472,8 @@
                         </execution>
                     </executions>
                 </plugin>
-                -->
+                    -->
+
                 <plugin>
                     <groupId>org.eclipse.tycho</groupId>
                     <artifactId>tycho-surefire-plugin</artifactId>
@@ -707,7 +734,9 @@
                 </property>
             </activation>
             <modules>
+                <!--
                 <module>common-targetdefinition</module>
+                -->
                 <module>common</module>
                 <module>common-feature</module>
                 <module>common-site</module>

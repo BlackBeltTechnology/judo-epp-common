@@ -2,9 +2,9 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Judo Common EPP Bundle
 Bundle-SymbolicName: hu.blackbelt.judo.eclipse.epp.package.common;singleton:=true
-Bundle-Version: 4.23.2.qualifier
+Bundle-Version: 4.26.0.qualifier
 Bundle-Vendor: Judo Eclipse Packaging Project
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Require-Bundle: org.eclipse.platform,
  org.eclipse.equinox.app,
  org.eclipse.ui,

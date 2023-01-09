@@ -2,7 +2,7 @@
 <feature
       id="hu.blackbelt.judo.eclipse.epp.package.common.feature"
       label="Judo EPP Common Package Feature"
-      version="4.23.2.qualifier"
+      version="4.26.0.qualifier"
       provider-name="Judo Eclipse Packaging Project"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
@@ -298,6 +298,26 @@
       You may add additional accurate notices of copyright ownership.
    </license>
 
+
+   <includes
+           id="org.eclipse.platform"
+           version="0.0.0"
+           search-location="both"/>
+
+   <plugin
+           id="org.eclipse.jdt.core"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"/>
+
+   <plugin
+           id="hu.blackbelt.judo.eclipse.epp.package.common"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"/>
+
+
+   <!--
    <plugin
          id="com.google.guava"
          download-size="0"
@@ -312,7 +332,7 @@
          version="0.0.0"
          fragment="true"
          unpack="false"/>
-
+-->
    <plugin
          id="org.slf4j.api"
          download-size="0"
@@ -320,6 +340,23 @@
          version="0.0.0"
          unpack="false"/>
 
+   <plugin
+           id="jakarta.servlet"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+
+   <!--
+   <plugin
+           id="jakarta.annotation"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+-->
+
+   <!--
    <plugin
          id="ch.qos.logback.classic"
          download-size="0"
@@ -355,5 +392,62 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+   -->
+
+
+   <plugin
+           id="org.eclipse.wtp.jee.capabilities"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"/>
+
+   <plugin
+           id="org.eclipse.wtp.web.capabilities"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"/>
+
+   <!--
+   <plugin
+           id="org.eclipse.jetty.annotations"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+-->
+   <plugin
+           id="org.eclipse.jetty.server"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+
+   <plugin
+           id="org.eclipse.jetty.servlet"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+
+   <plugin
+           id="org.eclipse.jetty.osgi.httpservice"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+
+   <plugin
+           id="org.eclipse.jetty.start"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
+
+   <plugin
+           id="org.eclipse.jetty.webapp"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"
+           unpack="false"/>
 
 </feature>
