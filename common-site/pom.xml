@@ -23,7 +23,6 @@
                         <id>default-assemble-repository</id>
                         <goals>
                             <goal>assemble-repository</goal>
-                            <goal>archive-repository</goal>
                         </goals>
                         <configuration>
                             <includeAllDependencies>true</includeAllDependencies>
