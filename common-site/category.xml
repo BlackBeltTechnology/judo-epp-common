@@ -4,7 +4,6 @@
       To install these features, point Eclipse at this site.
    </description>
    <feature id="org.eclipse.license"/>
-
    <feature id="hu.blackbelt.judo.eclipse.epp.package.common.feature"/>
    <feature id="org.eclipse.platform"/>
    <feature id="org.eclipse.equinox.p2.user.ui"/>
@@ -17,10 +16,6 @@
    <feature id="org.eclipse.cdt.sdk"/>
    -->
    <feature id="org.eclipse.tm.terminal.feature"/>
-   <!--
-   <feature id="org.eclipse.justj.epp"/>
-   -->
-   <feature id="org.eclipse.justj.openjdk.hotspot.jre.full.stripped"/>
 
    <feature id="org.eclipse.egit"/>
    <feature id="org.eclipse.jgit"/>
@@ -87,6 +82,7 @@
    <feature id="org.eclipse.tips.feature"/>
    -->
 
+   <!-- XText -->
    <feature id="org.eclipse.xtext.docs"/>
    <feature id="org.eclipse.xtext.examples"/>
    <feature id="org.eclipse.xtext.redist"/>
@@ -118,9 +114,6 @@
    <feature id="org.eclipse.sirius.runtime.aql"/>
    <feature id="org.eclipse.sirius.runtime.aql.source"/>
    <feature id="org.eclipse.sirius.runtime"/>
-   <!--
-   <feature id="org.eclipse.sirius.runtime.ide.eef"/>
-   -->
    <feature id="org.eclipse.sirius.runtime.ide.ui.acceleo"/>
    <feature id="org.eclipse.sirius.runtime.ide.ui.acceleo.source"/>
    <feature id="org.eclipse.sirius.runtime.ide.ui"/>
@@ -154,6 +147,7 @@
    <feature id="org.eclipse.sirius.specifier"/>
 
 
+   <feature id="org.sonatype.tycho.m2e.feature.source"/>
    <feature id="com.ianbrandt.tools.m2e.mdp.feature"/>
    <feature id="de.jcup.asciidoctoreditor"/>
    <feature id="org.eclipse.emf.ecore.xcore.sdk"/>
@@ -243,9 +237,8 @@
    <feature id="org.eclipse.pde"/>
    <feature id="org.eclipse.wst.common.fproj"/>
    <feature id="org.eclipse.wst.xsl.feature"/>
-   <feature id="org.eclipse.wildwebdeveloper.feature"/>
    <!--
-   <feature id="org.eclipse.wildwebdeveloper.embedder.node.feature"/>
+   <feature id="org.eclipse.wildwebdeveloper.feature"/>
    -->
 
    <feature id="org.eclipse.bpmn2.feature"/>
@@ -309,5 +302,40 @@
 
    <feature id="org.eclipse.linuxtools.docker.feature"/>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature"/>
+
+   <bundle id="ch.qos.logback.slf4j"/>
+
+
+   <feature id="org.eclipse.eef.ext.widgets.reference.feature.source"/>
+   <feature id="org.eclipse.acceleo.ui.interpreter.source"/>
+   <feature id="org.eclipse.mat.feature"/>
+   <feature id="org.eclipse.acceleo.ui.interpreter"/>
+   <feature id="org.eclipse.eef.sdk.feature"/>
+   <feature id="org.eclipse.eef.sdk.feature.source"/>
+   <feature id="org.eclipse.mat.chart.feature"/>
+   <feature id="org.eclipse.eef.ext.widgets.reference.feature"/>
+   <feature id="org.eclipse.acceleo.query"/>
+   <feature id="org.eclipse.acceleo.query.source"/>
+   <feature id="org.eclipse.emf.ecoretools.sdk"/>
+   <feature id="org.eclipse.jgit.lfs"/>
+   <feature id="org.eclipse.egit.source"/>
+   <feature id="net.sourceforge.plantuml.lib.elk.feature"/>
+   <feature id="net.sourceforge.plantuml.lib.jlatexmath.feature"/>
+   <feature id="org.eclipse.tm.terminal.connector.remote.feature"/>
+   <feature id="org.eclipse.acceleo"/>
+   <feature id="org.eclipse.e4.core.tools.feature.source"/>
+   <feature id="org.eclipse.egit.gitflow.feature"/>
+   <feature id="org.eclipse.emf.compare.uml2"/>
+   <feature id="org.eclipse.equinox.server.p2"/>
+   <feature id="org.eclipse.linuxtools.jdt.docker.launcher.feature"/>
+   <feature id="org.eclipse.uml2.codegen.ecore.ui.source"/>
+   <feature id="org.eclipse.uml2.common.edit.source"/>
+   <feature id="org.eclipse.uml2.common.source"/>
+   <feature id="org.eclipse.uml2.doc.source"/>
+   <feature id="org.eclipse.uml2.examples.source"/>
+   <feature id="org.eclipse.uml2.sdk.source"/>
+   <feature id="org.eclipse.uml2.source"/>
+   <feature id="org.eclipse.uml2.uml.edit.source"/>
+   <feature id="org.eclipse.uml2.uml.source"/>
 
 </site>

@@ -125,7 +125,11 @@
             <url>https://ianbrandt.github.io/m2e-maven-dependency-plugin</url>
             <layout>p2</layout>
         </repository>
-
+        <repository>
+            <id>sonatype-m2e</id>
+            <url>https://github.com/tesla/m2eclipse-tycho/releases/download/latest/</url>
+            <layout>p2</layout>
+        </repository>
         <repository>
             <id>eclipse-m2e-dependencies-2</id>
             <url>https://aneesh-joseph.github.io/m2e-maven-dependency-plugin/</url>
@@ -171,12 +175,6 @@
         <repository>
             <id>emfjson-jackson</id>
             <url>https://download.eclipse.org/emfcloud/emfjson-jackson/p2/releases/2.2.0/</url>
-            <layout>p2</layout>
-        </repository>
-
-        <repository>
-            <id>justj</id>
-            <url>https://download.eclipse.org/justj/jres/17/updates/release/</url>
             <layout>p2</layout>
         </repository>
     </repositories>
