@@ -30,10 +30,10 @@ jobs:
         id: context
         uses: zero88/gh-project-context@v1.1
 
-      - name: 🛠️ Set up JDK 11
+      - name: 🛠️ Set up JDK 17
         uses: actions/setup-java@v2
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'zulu'
 
       - name: 🔢 Get the current PR number
@@ -107,19 +107,10 @@ jobs:
           -Dtycho.mode=maven \
           tycho-versions:set-version
 
-      - name: 🚧 Update target definition
-        run: |-
-          ./mvnw -B -Dstyle.color=always \
-          -Dtycho.mode=maven  \
-          -P update-target-versions \
-          -f ./common-targetdefinition/pom.xml \
-          install
-
       - name: 🚧 Set tycho version
         run: |-
           ./mvnw -B -Dstyle.color=always \
           -Dtycho.mode=maven  \
-          -P update-category-versions \
           tycho-versions:update-eclipse-metadata
 
       # Phase 1 - Build and deploy to judong nexus
@@ -131,30 +122,7 @@ jobs:
           -Prelease-judong \
           deploy
 
-      # Phase 2 - Deploy to P2
-      - name: 🎁 Release P2 (parallel uoload)
-        run: |-
-          export BASE_URL=https://nexus.judo.technology/repository/p2-judong/judo-epp-common/${{ steps.version.outputs.version }}
-          export REPOSITORY_DIR=./common-site/target/repository
-          export USERNAME=${{ secrets.JUDONG_NEXUS_USERNAME }}
-          export PASSWORD=${{ secrets.JUDONG_NEXUS_PASSWORD }}
-          export NUM_OF_PROC=6
-
-          callUpload() {
-            curl --write-out ' %{url_effective} Bytes: %{size_upload} Response code: %{http_code}\n' \
-              --insecure \
-              --silent \
-              --output /dev/null \
-              --user "$USERNAME:$PASSWORD" \
-              --upload-file $REPOSITORY_DIR$1 $BASE_URL$1
-          }
-          export -f callUpload
-
-          REP_DIR_LEN=`echo -n "$REPOSITORY_DIR" | wc -c`; REP_DIR_LEN=$(($REP_DIR_LEN + 1))
-
-          find $REPOSITORY_DIR -type f -print0 | xargs -0 -I file echo "file" | cut -c$REP_DIR_LEN- | xargs -P $NUM_OF_PROC -I {} bash -c 'callUpload "$@"' _ {} 
-
-      # Phase 3 - Build and deploy to maven central
+      # Phase 2 - Build and deploy to maven central
       - name: 🎁 Deploy with Maven (central)
         if: ${{ always() && startsWith(github.head_ref, 'release') && job.status == 'success' }}
         run: |-
@@ -227,9 +195,31 @@ jobs:
           name: v${{ steps.version.outputs.version }}
           tag: v${{ steps.version.outputs.version }}
           generateReleaseNotes: false
-          body: ${{steps.create_changelog.outputs.changelog}}
-          draft: false
+          draft: true
           prerelease: true
+          body: |-
+            To install add the following P2 repository:
+            =======================================
+            
+            In maven (with tycho):
+             ---------------------------
+            ```
+            <repository>
+            <id>judo-epp-commons</id>
+            <url>mvn:hu.blackbelt.judo.eclipse.epp:hu.blackbelt.judo.eclipse.epp.package.common.site:${{ steps.version.outputs.version }}:zip</url>
+            <layout>p2</layout>
+            </repository>
+            ```
+            
+            In Eclipse (with m2e):
+            --------------------------
+            Use the following form in Eclipse in the `Install new software...' menu:
+              
+            `mvn:hu.blackbelt.judo.eclipse.epp:hu.blackbelt.judo.eclipse.epp.package.common.site:${{ steps.version.outputs.version }}:zip`
+            
+            Changelog:
+            --------------
+            ${{steps.create_changelog.outputs.changelog}}
 
       - name: 🎤 Create message
         id: message
