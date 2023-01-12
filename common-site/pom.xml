@@ -29,9 +29,11 @@
                         </configuration>
                     </execution>
                 </executions>
+                <!--
                 <configuration>
                     <skipArchive>true</skipArchive>
                 </configuration>
+                -->
             </plugin>
         </plugins>
     </build>

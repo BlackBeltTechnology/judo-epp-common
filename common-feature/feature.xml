@@ -2,7 +2,7 @@
 <feature
       id="hu.blackbelt.judo.eclipse.epp.package.common.feature"
       label="Judo EPP Common Package Feature"
-      version="4.23.2.qualifier"
+      version="4.26.0.qualifier"
       provider-name="Judo Eclipse Packaging Project"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
@@ -298,62 +298,22 @@
       You may add additional accurate notices of copyright ownership.
    </license>
 
-   <plugin
-         id="com.google.guava"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+
+   <includes
+           id="org.eclipse.platform"
+           version="0.0.0"
+           search-location="both"/>
 
    <plugin
-         id="ch.qos.logback.slf4j"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
+           id="org.eclipse.jdt.core"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"/>
 
    <plugin
-         id="org.slf4j.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.classic"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="ch.qos.logback.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.m2e.logback.appender"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.m2e.logback.configuration"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="javax.validation"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+           id="hu.blackbelt.judo.eclipse.epp.package.common"
+           download-size="0"
+           install-size="0"
+           version="0.0.0"/>
 
 </feature>
