@@ -12,7 +12,7 @@ jobs:
   build:
     name: ⏳ Dependabot test build
     runs-on: judong
-    timeout-minutes: 30
+    timeout-minutes: 120
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     outputs:
       version: ${{ steps.version.outputs.version }}
