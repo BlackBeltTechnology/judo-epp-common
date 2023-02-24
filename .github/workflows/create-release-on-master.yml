@@ -83,15 +83,41 @@ jobs:
           toTag: v${{ steps.version.outputs.version }}
 
       - name: 📖 Create release
+        if: |-
+          ${{ always() && 
+          (startsWith(github.head_ref, 'develop') || github.ref == 'refs/heads/develop') && 
+          job.status == 'success' }}
         uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           name: v${{ steps.version.outputs.version }}
           tag: v${{ steps.version.outputs.version }}
           generateReleaseNotes: false
-          body: ${{steps.create_changelog.outputs.changelog}}
-          draft: false
-          prerelease: false
+          draft: true
+          prerelease: true
+          body: |-
+            To install add the following P2 repository:
+            =======================================
+            
+            In maven (with tycho):
+             ---------------------------
+            ```
+            <repository>
+            <id>judo-epp-commons</id>
+            <url>mvn:hu.blackbelt.judo.eclipse.epp:hu.blackbelt.judo.eclipse.epp.package.common.site:${{ steps.version.outputs.version }}:zip</url>
+            <layout>p2</layout>
+            </repository>
+            ```
+            
+            In Eclipse (with m2e):
+            --------------------------
+            Use the following form in Eclipse in the `Install new software...' menu:
+            
+            `mvn:hu.blackbelt.judo.eclipse.epp:hu.blackbelt.judo.eclipse.epp.package.common.site:${{ steps.version.outputs.version }}:zip`
+            
+            Changelog:
+            --------------
+            ${{steps.create_changelog.outputs.changelog}}
 
       - name: 📢 Send error to discord
         uses: sarisia/actions-status-discord@v1
