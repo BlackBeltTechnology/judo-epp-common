@@ -809,22 +809,31 @@
 							<organizationName>BlackBelt Technology</organizationName>
 							<inceptionYear>2018</inceptionYear>
 						</configuration>
-						<executions>
-							<execution>
-								<id>first</id>
-								<goals>
-									<goal>update-file-header</goal>
-								</goals>
-								<phase>process-sources</phase>
-								<configuration>
-									<licenseName>apache_v2</licenseName>
-									<roots>
-										<root>src/main/java</root>
-										<root>src/test</root>
-									</roots>
-								</configuration>
-							</execution>
-						</executions>
+                        <executions>
+                            <execution>
+                                <id>first</id>
+                                <goals>
+                                    <goal>update-file-header</goal>
+                                </goals>
+                                <phase>process-sources</phase>
+                                <configuration>
+                                    <licenseName>epl_v2</licenseName>
+									<excludes>
+										<exclude>**/*.json</exclude>
+									</excludes>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>second</id>
+                                <goals>
+                                    <goal>update-project-license</goal>
+                                </goals>
+                                <phase>process-sources</phase>
+                                <configuration>
+                                    <licenseName>epl_v2</licenseName>
+                                </configuration>
+                            </execution>
+                        </executions>
 					</plugin>
 				</plugins>
 			</build>
