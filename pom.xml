@@ -55,7 +55,7 @@
     </developers>
     
     <properties>
-        <revision>4.26.0-SNAPSHOT</revision>
+        <revision>4.28.0-SNAPSHOT</revision>
         <maven>3.8.3</maven>
         <maven.version>3.8.3</maven.version>
         <tycho-version>2.7.5</tycho-version>
@@ -67,7 +67,7 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2022-12</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2023-06</eclipse.release.repository>
 
         <surefire-version>3.0.0-M7</surefire-version>
 
@@ -111,7 +111,7 @@
 
         <repository>
             <id>eclipse-release</id>
-            <url>https://download.eclipse.org/releases/2022-12</url>
+            <url>https://download.eclipse.org/releases/2023-06</url>
             <layout>p2</layout>
         </repository>
 
@@ -124,13 +124,13 @@
         -->
         <repository>
             <id>eclipse-sirius-release</id>
-            <url>https://download.eclipse.org/sirius/updates/releases/7.0.6/2021-06/</url>
+            <url>https://download.eclipse.org/sirius/updates/releases/7.2.0/2023-03/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>eclipse-m2e</id>
-            <url>https://download.eclipse.org/technology/m2e/releases/2.1.2 </url>
+            <url>https://download.eclipse.org/technology/m2e/releases/2.3.0/</url>
             <layout>p2</layout>
         </repository>
         <repository>
@@ -163,31 +163,37 @@
 
         <repository>
             <id>color-console</id>
-            <url>http://www.mihai-nita.net/eclipse</url>
+            <url>https://www.mihai-nita.net/eclipse</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>eclipse-orbit</id>
-            <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository/</url>
+            <url>https://download.eclipse.org/oomph/simrel-orbit/release/4.28.0/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>plantuml</id>
-            <url>https://hallvard.github.io/plantuml/plantuml.eclipse/1.1.27-SNAPSHOT/</url>
+            <url>https://hallvard.github.io/plantuml/plantuml.eclipse/1.1.29/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>plantuml-lib</id>
-            <url>https://hallvard.github.io/plantuml/plantuml.lib/1.2022.7/</url>
+            <url>https://hallvard.github.io/plantuml/plantuml.lib/1.2023.10/</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
             <id>emfjson-jackson</id>
             <url>https://download.eclipse.org/emfcloud/emfjson-jackson/p2/releases/2.2.0/</url>
+            <layout>p2</layout>
+        </repository>
+        
+        <repository>
+            <id>jasperreports</id>
+            <url>https://sourceforge.net/projects/jasperstudio/files/updatesite/6.20.5/</url>
             <layout>p2</layout>
         </repository>
     </repositories>
