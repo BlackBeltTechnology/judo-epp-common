@@ -158,6 +158,7 @@
    <feature id="net.sourceforge.plantuml.feature.source"/>
 
    <feature id="de.jcup.asciidoctoreditor"/>
+
    <feature id="net.mihai-nita.ansicon"/>
 
    <feature id="org.eclipse.equinox.executable"/>
@@ -307,16 +308,17 @@
 
 
    <feature id="org.eclipse.eef.ext.widgets.reference.feature.source"/>
-   <feature id="org.eclipse.acceleo.ui.interpreter.source"/>
    <feature id="org.eclipse.mat.feature"/>
-   <feature id="org.eclipse.acceleo.ui.interpreter"/>
    <feature id="org.eclipse.eef.sdk.feature"/>
    <feature id="org.eclipse.eef.sdk.feature.source"/>
    <feature id="org.eclipse.mat.chart.feature"/>
    <feature id="org.eclipse.eef.ext.widgets.reference.feature"/>
    <feature id="org.eclipse.acceleo.query"/>
    <feature id="org.eclipse.acceleo.query.source"/>
+<!--
    <feature id="org.eclipse.emf.ecoretools.sdk"/>
+-->
+   <feature id="org.eclipse.xsd.ecore.converter"/>
    <feature id="org.eclipse.jgit.lfs"/>
    <feature id="org.eclipse.egit.source"/>
    <feature id="net.sourceforge.plantuml.lib.elk.feature"/>
@@ -337,5 +339,14 @@
    <feature id="org.eclipse.uml2.source"/>
    <feature id="org.eclipse.uml2.uml.edit.source"/>
    <feature id="org.eclipse.uml2.uml.source"/>
-
+   
+   <feature id="org.eclipse.emf.codegen.ecore.ui"/>
+   <feature id="org.eclipse.emf.codegen.ecore"/>
+   <feature id="org.eclipse.emf.ecore.xcore.ui"/>
+   <feature id="org.eclipse.emf.ecore.xcore"/>
+   
+   <feature id="com.jaspersoft.studio.feature"/>
+   <feature id="net.sf.jasperreports.feature"/>
+   <feature id="net.sf.jasperreports.samples.feature"/>
+   
 </site>
