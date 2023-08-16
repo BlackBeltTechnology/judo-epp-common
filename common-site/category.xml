@@ -344,9 +344,10 @@
    <feature id="org.eclipse.emf.codegen.ecore"/>
    <feature id="org.eclipse.emf.ecore.xcore.ui"/>
    <feature id="org.eclipse.emf.ecore.xcore"/>
-   
+
+   <!--
    <feature id="com.jaspersoft.studio.feature"/>
    <feature id="net.sf.jasperreports.feature"/>
    <feature id="net.sf.jasperreports.samples.feature"/>
-   
+   -->
 </site>
