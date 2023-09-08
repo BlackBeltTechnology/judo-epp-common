@@ -39,7 +39,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.11</version>
+            <version>1.4.11</version>
         </dependency>
     </dependencies>
 
@@ -56,9 +56,10 @@
     
     <properties>
         <revision>4.28.0-SNAPSHOT</revision>
+        <qualifier>-SNAPSHOT</qualifier>
         <maven>3.9.4</maven>
-        <maven.version>3.8.3</maven.version>
-        <tycho-version>4.0.1</tycho-version>
+        <maven.version>3.9.4</maven.version>
+        <tycho-version>4.0.2</tycho-version>
         <!--suppress UnresolvedMavenProperty -->
         <tycho.extras.version>${tycho.version}</tycho.extras.version>
         <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-epp-common.git</tycho.scmUrl>
@@ -69,7 +70,7 @@
         
         <eclipse.release.repository>https://download.eclipse.org/releases/2023-06</eclipse.release.repository>
 
-        <surefire-version>3.0.0-M7</surefire-version>
+        <surefire-version>3.1.2</surefire-version>
 
         <!--suppress UnresolvedMavenProperty -->
         <logback-test-config>${maven.multiModuleProjectDirectory}/logback-test.xml</logback-test-config>
@@ -115,6 +116,11 @@
             <layout>p2</layout>
         </repository>
 
+		<repository>	
+            <id>gmf</id>
+			<url>https://download.eclipse.org/modeling/gmp/gmf-runtime/updates/releases/</url>
+            <layout>p2</layout>
+		</repository>
         <!--
         <repository>
             <id>cdt</id>
@@ -130,7 +136,7 @@
 
         <repository>
             <id>eclipse-m2e</id>
-            <url>https://download.eclipse.org/technology/m2e/releases/2.3.0/</url>
+            <url>https://download.eclipse.org/technology/m2e/releases/latest/</url>
             <layout>p2</layout>
         </repository>
         <repository>
