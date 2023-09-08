@@ -135,6 +135,7 @@ jobs:
           -DdeployOnly \
           -P"release-central,sign-artifacts,-verify-feature" \
           -Dmaven.test.skip=true \
+          -Dtycho.localArtifacts=ignore \
           deploy
           
       - name: 🔎 Sonar Metrics

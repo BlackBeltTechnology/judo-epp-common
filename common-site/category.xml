@@ -17,6 +17,13 @@
    -->
    <feature id="org.eclipse.tm.terminal.feature"/>
 
+   <feature id="org.eclipse.gmf.runtime.sdk"/>
+
+<!--
+   <feature id="org.eclipse.gmf"/>
+   <feature id="org.eclipse.gmf.runtime.notation"/>
+   <feature id="org.eclipse.gmf.runtime.thirdparty"/>
+-->
    <feature id="org.eclipse.egit"/>
    <feature id="org.eclipse.jgit"/>
    <feature id="org.eclipse.mylyn.wikitext_feature"/>
@@ -37,7 +44,6 @@
    <feature id="org.eclipse.emf.transaction.sdk"/>
    <feature id="org.eclipse.emf.validation.sdk"/>
    <feature id="org.eclipse.gef.sdk"/>
-   <feature id="org.eclipse.gmf.runtime.sdk"/>
    <feature id="org.eclipse.jdt"/>
    <feature id="org.eclipse.ocl.all.sdk"/>
    <feature id="org.eclipse.pde"/>
