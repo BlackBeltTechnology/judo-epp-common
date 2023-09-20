@@ -55,7 +55,7 @@
     </developers>
     
     <properties>
-        <revision>4.28.0-SNAPSHOT</revision>
+        <revision>4.29.0-SNAPSHOT</revision>
         <qualifier>-SNAPSHOT</qualifier>
         <maven>3.9.4</maven>
         <maven.version>3.9.4</maven.version>
@@ -68,7 +68,7 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2023-06</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2023-09</eclipse.release.repository>
 
         <surefire-version>3.1.2</surefire-version>
 
@@ -92,6 +92,7 @@
     </prerequisites>
 
 
+    <!--
     <pluginRepositories>
         <pluginRepository>
             <id>eclipse-tycho</id>
@@ -102,6 +103,7 @@
             <url>https://repo.eclipse.org/content/groups/cbi/</url>
         </pluginRepository>
     </pluginRepositories>
+    -->
 
     <repositories>
         <repository>
@@ -112,15 +114,17 @@
 
         <repository>
             <id>eclipse-release</id>
-            <url>https://download.eclipse.org/releases/2023-06</url>
+            <url>https://download.eclipse.org/releases/2023-09</url>
             <layout>p2</layout>
         </repository>
 
+        <!--
 		<repository>	
             <id>gmf</id>
 			<url>https://download.eclipse.org/modeling/gmp/gmf-runtime/updates/releases/</url>
             <layout>p2</layout>
 		</repository>
+		-->
         <!--
         <repository>
             <id>cdt</id>
@@ -130,7 +134,7 @@
         -->
         <repository>
             <id>eclipse-sirius-release</id>
-            <url>https://download.eclipse.org/sirius/updates/releases/7.2.0/2023-03/</url>
+            <url>https://download.eclipse.org/sirius/updates/releases/7.2.1/2023-03/</url>
             <layout>p2</layout>
         </repository>
 
@@ -139,11 +143,14 @@
             <url>https://download.eclipse.org/technology/m2e/releases/latest/</url>
             <layout>p2</layout>
         </repository>
+        <!--
         <repository>
             <id>eclipse-m2e-dependencies</id>
             <url>https://ianbrandt.github.io/m2e-maven-dependency-plugin</url>
             <layout>p2</layout>
         </repository>
+        -->
+        <!--
         <repository>
             <id>sonatype-m2e</id>
             <url>https://github.com/tesla/m2eclipse-tycho/releases/download/latest/</url>
@@ -154,10 +161,10 @@
             <url>https://aneesh-joseph.github.io/m2e-maven-dependency-plugin/</url>
             <layout>p2</layout>
         </repository>
-
+        -->
         <repository>
             <id>eclipse-emfatic</id>
-            <url>https://download.eclipse.org/emfatic/update-18032020/</url>
+            <url>https://download.eclipse.org/emfatic/update/</url>
             <layout>p2</layout>
         </repository>
 
@@ -175,7 +182,7 @@
 
         <repository>
             <id>eclipse-orbit</id>
-            <url>https://download.eclipse.org/oomph/simrel-orbit/release/4.28.0/</url>
+            <url>https://download.eclipse.org/oomph/simrel-orbit/2023-09/</url>
             <layout>p2</layout>
         </repository>
 
