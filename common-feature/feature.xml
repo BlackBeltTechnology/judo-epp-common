@@ -2,7 +2,7 @@
 <feature
       id="hu.blackbelt.judo.eclipse.epp.package.common.feature"
       label="Judo EPP Common Package Feature"
-      version="4.28.0.qualifier"
+      version="4.29.0.qualifier"
       provider-name="Judo Eclipse Packaging Project"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
@@ -315,5 +315,31 @@
            download-size="0"
            install-size="0"
            version="0.0.0"/>
+
+   <plugin id="org.eclipse.m2e.archetype.common"/>
+   <plugin id="org.eclipse.m2e.archetype.catalog"/>
+   <plugin id="org.eclipse.m2e.archetype.descriptor"/>
+   <plugin id="org.eclipse.m2e.archetype.maven-artifact-transfer"/>
+   <plugin id="org.eclipse.m2e.model.edit"/>
+   <plugin id="org.eclipse.m2e.core"/>
+   <plugin id="org.eclipse.m2e.launching"/>
+   <plugin id="org.eclipse.m2e.workspace.cli"/>
+   <plugin id="org.eclipse.m2e.jdt"/>
+   <plugin id="org.eclipse.m2e.editor"/>
+   <plugin id="org.eclipse.m2e.maven.runtime"/>
+   <plugin id="org.eclipse.m2e.refactoring"/>
+   <plugin id="org.eclipse.m2e.discovery"/>
+   <plugin id="org.eclipse.m2e.core.ui"/>
+   <plugin id="org.eclipse.m2e.scm"/>
+   <plugin id="org.eclipse.m2e.jdt.ui"/>
+   <plugin id="org.eclipse.m2e.profiles.core"/>
+   <plugin id="org.eclipse.m2e.profiles.ui"/>
+   <plugin id="org.eclipse.m2e.sourcelookup"/>
+   <plugin id="org.eclipse.m2e.sourcelookup.ui"/>
+   <plugin id="org.eclipse.m2e.binaryproject"/>
+   <plugin id="org.eclipse.m2e.binaryproject.ui"/>
+   <plugin id="org.eclipse.m2e.apt.core"/>
+   <plugin id="org.eclipse.m2e.apt.ui"/>
+   <plugin id="org.eclipse.m2e.mavenarchiver"/>
 
 </feature>
