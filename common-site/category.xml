@@ -3,18 +3,20 @@
    <description>
       To install these features, point Eclipse at this site.
    </description>
+  
    <feature id="org.eclipse.license"/>
    <feature id="hu.blackbelt.judo.eclipse.epp.package.common.feature"/>
    <feature id="org.eclipse.platform"/>
    <feature id="org.eclipse.equinox.p2.user.ui"/>
    <feature id="org.eclipse.epp.mpc"/>
    <feature id="org.eclipse.oomph.setup"/>
-   <!--
+<!--
    <feature id="org.eclipse.cdt"/>
    <feature id="org.eclipse.cdt.gdb"/>
    <feature id="org.eclipse.cdt.platform"/>
    <feature id="org.eclipse.cdt.sdk"/>
-   -->
+-->
+
    <feature id="org.eclipse.tm.terminal.feature"/>
 
    <!--
@@ -25,20 +27,29 @@
    -->
    <feature id="org.eclipse.egit"/>
    <feature id="org.eclipse.jgit"/>
-   <feature id="org.eclipse.mylyn.wikitext_feature"/>
+   <feature id="org.eclipse.mylyn.wikitext.feature"/>
 
    <!-- model product specific contents -->
    <feature id="org.eclipse.e4.core.tools.feature"/>
    <feature id="org.eclipse.emf.cdo.sdk"/>
+
+
    <feature id="org.eclipse.emf.compare.ide.ui.source"/>
    <feature id="org.eclipse.emf.compare.source"/>
    <feature id="org.eclipse.emf.compare.diagram.sirius.source"/>
    <feature id="org.eclipse.emf.compare.egit"/>
    <feature id="org.eclipse.emf.ecoretools.design"/>
+   <!--
+   <feature id="org.eclipse.emf.ecoretools.explorer.contextual"/>
+   <feature id="org.eclipse.emf.ecoretools.sdk"/>
+   -->
+<!--
    <feature id="org.eclipse.emf.ecp.emfforms.sdk.feature"/>
    <feature id="org.eclipse.emf.parsley.sdk"/>
    <feature id="org.eclipse.emf.parsley.sdk.source"/>
    <feature id="org.eclipse.emf.query.sdk"/>
+-->	
+
    <feature id="org.eclipse.emf.sdk"/>
    <feature id="org.eclipse.emf.transaction.sdk"/>
    <feature id="org.eclipse.emf.validation.sdk"/>
@@ -54,16 +65,18 @@
    <feature id="org.eclipse.buildship"/>
    <feature id="org.eclipse.eclemma.feature"/>
    <feature id="org.eclipse.jdt"/>
-   <!--
    <feature id="org.eclipse.m2e.feature"/>
-   -->
-   <feature id="org.eclipse.m2e.lemminx.feature"/>
-   <feature id="org.eclipse.m2e.logback.feature"/>
-   <feature id="org.eclipse.m2e.pde.feature"/>
+
+
    <!--
+   <feature id="org.eclipse.wildwebdeveloper.xml.feature"/>
+   <feature id="org.eclipse.m2e.lemminx.feature"/>
    <feature id="org.eclipse.m2e.sdk.feature"/>
    -->
-   <feature id="org.eclipse.wildwebdeveloper.xml.feature"/>
+
+   <feature id="org.eclipse.m2e.logback.feature"/>
+   <feature id="org.eclipse.m2e.pde.feature"/>
+
 
    <!-- XText -->
    <feature id="org.eclipse.xtext.docs"/>
@@ -120,6 +133,10 @@
    <feature id="org.eclipse.sirius.specifier.properties.feature.source"/>
    <feature id="org.eclipse.sirius.specifier.source"/>
    <!--
+   <feature id="org.eclipse.sirius.runtime.ide.eef"/>
+   <feature id="org.eclipse.sirius.runtime.ide.eef.source"/>
+   -->
+   <!--
    <feature id="org.eclipse.sirius.tests"/>
    <feature id="org.eclipse.sirius.tests.rcptt.feature"/>
    <feature id="org.eclipse.sirius.tests.rcptt.feature.source"/>
@@ -149,6 +166,23 @@
    <feature id="net.mihai-nita.ansicon"/>
 
    <feature id="org.eclipse.equinox.executable"/>
+   <feature id="org.eclipse.e4.rcp"/>
+   <feature id="org.eclipse.equinox.core.feature"/>
+   <feature id="org.eclipse.equinox.core.sdk"/>
+   <feature id="org.eclipse.equinox.p2.discovery.feature"/>
+   <feature id="org.eclipse.equinox.p2.rcp.feature"/>
+   <feature id="org.eclipse.equinox.server.core"/>
+   <feature id="org.eclipse.equinox.server.jetty"/>
+
+   <feature id="org.eclipse.equinox.compendium.sdk"/>
+   <feature id="org.eclipse.equinox.p2.core.feature"/>
+   <feature id="org.eclipse.equinox.p2.core.feature.source"/>
+   <feature id="org.eclipse.equinox.p2.extras.feature"/>
+   <feature id="org.eclipse.equinox.p2.extras.feature.source"/>
+   <feature id="org.eclipse.equinox.p2.rcp.feature.source"/>
+   <feature id="org.eclipse.equinox.p2.user.ui.source"/>
+
+   <feature id="org.eclipse.platform.source"/>
 
    <!--
    <feature id="org.eclipse.wst.server_adapters"/>
@@ -215,11 +249,13 @@
    <!--
    <feature id="org.eclipse.wildwebdeveloper.feature"/>
    -->
-
+   
+   <!--
    <feature id="org.eclipse.bpmn2.feature"/>
    <feature id="org.eclipse.bpmn2.modeler.examples"/>
    <feature id="org.eclipse.bpmn2.modeler"/>
    <feature id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+   -->
    <feature id="org.eclipse.emf.mwe.sdk"/>
    <feature id="org.eclipse.emf.mwe2.language.sdk"/>
    <feature id="org.eclipse.emf.mwe2.runtime.sdk"/>
@@ -249,52 +285,72 @@
    <bundle id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations.source"/>
    <bundle id="com.google.http-client.google-http-client-jackson2"/>
    <bundle id="com.google.http-client.google-http-client-jackson2.source"/>
-
    <bundle id="org.eclipse.emfcloud.emfjson-jackson"/>
    <bundle id="org.eclipse.emfcloud.emfjson-jackson.source"/>
 
    <feature id="org.eclipse.emf.emfatic"/>
 
+<!--
    <bundle id="org.slf4j.api"/>
-
+-->
    <!--
    <feature id="org.eclipse.linuxtools.docker.feature"/>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature"/>
    -->
 
+<!--
    <bundle id="ch.qos.logback.slf4j"/>
+-->
 
 
    <feature id="org.eclipse.eef.ext.widgets.reference.feature.source"/>
    <!--
    <feature id="org.eclipse.mat.feature"/>
    -->
+   <!--
    <feature id="org.eclipse.eef.sdk.feature"/>
    <feature id="org.eclipse.eef.sdk.feature.source"/>
+   -->
    <!--
    <feature id="org.eclipse.mat.chart.feature"/>
    -->
    <feature id="org.eclipse.eef.ext.widgets.reference.feature"/>
-
+   <!--
+   <feature id="org.eclipse.emf.eef.sdk-feature"/>
+   -->
    <!--
    <feature id="org.eclipse.acceleo.query"/>
    <feature id="org.eclipse.acceleo.query.source"/>
    -->
-   <!--
    <feature id="org.eclipse.emf.ecoretools.sdk"/>
-   -->
    <feature id="org.eclipse.xsd.ecore.converter"/>
    <feature id="org.eclipse.jgit.lfs"/>
+   <!--
+   <feature id="org.eclipse.jdt.core"/>
+   -->
+   <feature id="org.eclipse.equinox.sdk"/>
+
+   <!--
    <feature id="org.eclipse.egit.source"/>
+   -->
+   <feature id="net.sourceforge.plantuml.lib.feature"/>
    <feature id="net.sourceforge.plantuml.lib.elk.feature"/>
    <feature id="net.sourceforge.plantuml.lib.jlatexmath.feature"/>
    <feature id="org.eclipse.tm.terminal.connector.remote.feature"/>
+   <feature id="org.eclipse.tm.terminal.connector.telnet.feature"/>
+   <feature id="org.eclipse.tm.terminal.connector.local.feature"/>
+   <!--
    <feature id="org.eclipse.acceleo"/>
+   -->
    <feature id="org.eclipse.e4.core.tools.feature.source"/>
    <feature id="org.eclipse.egit.gitflow.feature"/>
    <feature id="org.eclipse.emf.compare.uml2"/>
+   <!--
    <feature id="org.eclipse.equinox.server.p2"/>
+	-->
+   <!--
    <feature id="org.eclipse.linuxtools.jdt.docker.launcher.feature"/>
+   -->
    <feature id="org.eclipse.uml2.codegen.ecore.ui.source"/>
    <feature id="org.eclipse.uml2.common.edit.source"/>
    <feature id="org.eclipse.uml2.common.source"/>
@@ -315,7 +371,7 @@
    <feature id="net.sf.jasperreports.feature"/>
    <feature id="net.sf.jasperreports.samples.feature"/>
    -->
-
+	
    <bundle id="org.eclipse.m2e.archetype.common"/>
    <bundle id="org.eclipse.m2e.archetype.catalog"/>
    <bundle id="org.eclipse.m2e.archetype.descriptor"/>
@@ -341,5 +397,10 @@
    <bundle id="org.eclipse.m2e.apt.core"/>
    <bundle id="org.eclipse.m2e.apt.ui"/>
    <bundle id="org.eclipse.m2e.mavenarchiver"/>
+
+   <bundle id="slf4j.api"/>
+	
+   <bundle id="com.google.guava"/>
+   <bundle id="com.google.guava.failureaccess"/>
 
 </site>

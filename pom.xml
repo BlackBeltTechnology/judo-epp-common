@@ -39,7 +39,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.4.11</version>
+            <version>${logback-version}</version>
         </dependency>
     </dependencies>
 
@@ -55,25 +55,29 @@
     </developers>
     
     <properties>
-        <revision>4.29.0-SNAPSHOT</revision>
+        <revision>4.33.0-SNAPSHOT</revision>
         <qualifier>-SNAPSHOT</qualifier>
-        <maven>3.9.4</maven>
-        <maven.version>3.9.4</maven.version>
-        <tycho-version>4.0.7</tycho-version>
+        <maven>3.9.9</maven>
+        <maven.version>3.9.9</maven.version>
+        <tycho-version>4.0.9</tycho-version>
         <!--suppress UnresolvedMavenProperty -->
         <tycho.extras.version>${tycho.version}</tycho.extras.version>
         <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-epp-common.git</tycho.scmUrl>
-        <cbi.version>1.1.5</cbi.version>
+        <cbi.version>1.5.0</cbi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2023-09</eclipse.release.repository>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        
+        <eclipse.release.repository>https://download.eclipse.org/releases/2024-09</eclipse.release.repository>
 
-        <surefire-version>3.1.2</surefire-version>
+        <surefire-version>3.5.1</surefire-version>
 
         <!--suppress UnresolvedMavenProperty -->
         <logback-test-config>${maven.multiModuleProjectDirectory}/logback-test.xml</logback-test-config>
+        <logback-version>1.5.12</logback-version>
 
         <project-shortname>judo-epp-common</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-epp-common</project-repositoryId>
@@ -84,7 +88,7 @@
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.language>java</sonar.language>
 		<sonar.java.source>${java.version}</sonar.java.source>
-		<jacoco.version>0.8.8</jacoco.version>
+		<jacoco.version>0.8.12</jacoco.version>
 
     </properties>
     <prerequisites>
@@ -114,7 +118,22 @@
 
         <repository>
             <id>eclipse-release</id>
-            <url>https://download.eclipse.org/releases/2023-09</url>
+            <url>https://download.eclipse.org/releases/2024-09</url>
+            <layout>p2</layout>
+        </repository>
+
+
+        <!--
+        <repository>
+            <id>eclipse-amalgam</id>
+            <url>https://download.eclipse.org/modeling/amalgam/updates/releases/1.14.0/capella/</url>
+            <layout>p2</layout>
+        </repository>
+        -->
+
+        <repository>
+            <id>eclipse-ecoretools</id>
+            <url>https://download.eclipse.org/ecoretools/updates/releases/3.4.0/2021-06</url>
             <layout>p2</layout>
         </repository>
 
@@ -134,7 +153,7 @@
         -->
         <repository>
             <id>eclipse-sirius-release</id>
-            <url>https://download.eclipse.org/sirius/updates/releases/7.2.1/2023-03/</url>
+            <url>https://download.eclipse.org/sirius/updates/releases/7.4.4/2023-03/</url>
             <layout>p2</layout>
         </repository>
 
@@ -187,14 +206,14 @@
         </repository>
 
         <repository>
-            <id>plantuml</id>
-            <url>https://hallvard.github.io/plantuml/plantuml.eclipse/1.1.29/</url>
+            <id>eclipse-orbit-drop</id>
+            <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository</url>
             <layout>p2</layout>
         </repository>
 
         <repository>
-            <id>plantuml-lib</id>
-            <url>https://hallvard.github.io/plantuml/plantuml.lib/1.2023.10/</url>
+            <id>plantuml</id>
+            <url>https://hallvard.github.io/plantuml</url>
             <layout>p2</layout>
         </repository>
 
