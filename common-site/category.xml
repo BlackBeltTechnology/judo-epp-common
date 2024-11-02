@@ -68,9 +68,11 @@
    <feature id="org.eclipse.m2e.feature"/>
 
 
+   <!--
    <feature id="org.eclipse.wildwebdeveloper.xml.feature"/>
    <feature id="org.eclipse.m2e.lemminx.feature"/>
    <feature id="org.eclipse.m2e.sdk.feature"/>
+   -->
 
    <feature id="org.eclipse.m2e.logback.feature"/>
    <feature id="org.eclipse.m2e.pde.feature"/>
@@ -370,8 +372,6 @@
    <feature id="net.sf.jasperreports.samples.feature"/>
    -->
 	
-
-<!--
    <bundle id="org.eclipse.m2e.archetype.common"/>
    <bundle id="org.eclipse.m2e.archetype.catalog"/>
    <bundle id="org.eclipse.m2e.archetype.descriptor"/>
@@ -397,7 +397,7 @@
    <bundle id="org.eclipse.m2e.apt.core"/>
    <bundle id="org.eclipse.m2e.apt.ui"/>
    <bundle id="org.eclipse.m2e.mavenarchiver"/>
--->
+
    <bundle id="slf4j.api"/>
 	
    <bundle id="com.google.guava"/>

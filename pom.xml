@@ -68,8 +68,8 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <maven.compiler.target>21</maven.compiler.target>
-        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
         
         <eclipse.release.repository>https://download.eclipse.org/releases/2024-09</eclipse.release.repository>
 
@@ -121,28 +121,20 @@
             <layout>p2</layout>
         </repository>
 
+
+        <!--
         <repository>
             <id>eclipse-amalgam</id>
             <url>https://download.eclipse.org/modeling/amalgam/updates/releases/1.14.0/capella/</url>
             <layout>p2</layout>
         </repository>
+        -->
 
         <repository>
             <id>eclipse-ecoretools</id>
             <url>https://download.eclipse.org/ecoretools/updates/releases/3.4.0/2021-06</url>
             <layout>p2</layout>
         </repository>
-        
-        
-
-<!-- 
-        <repository>
-            <id>eclipse-release-for-eef</id>
-            <url>https://download.eclipse.org/releases/2023-09</url>
-            <layout>p2</layout>
-        </repository>
--->
-
 
         <!--
 		<repository>	
