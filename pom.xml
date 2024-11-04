@@ -78,6 +78,7 @@
         <!--suppress UnresolvedMavenProperty -->
         <logback-test-config>${maven.multiModuleProjectDirectory}/logback-test.xml</logback-test-config>
         <logback-version>1.5.12</logback-version>
+        <lombok-version>1.18.34</lombok-version>
 
         <project-shortname>judo-epp-common</project-shortname>
         <project-repositoryId>BlackBeltTechnology/judo-epp-common</project-repositoryId>
@@ -535,7 +536,7 @@
                         <dependency>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.24</version>
+                            <version>${lombok-version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
