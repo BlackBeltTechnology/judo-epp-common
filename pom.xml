@@ -55,11 +55,11 @@
     </developers>
     
     <properties>
-        <revision>4.33.0-SNAPSHOT</revision>
+        <revision>4.35.0-SNAPSHOT</revision>
         <qualifier>-SNAPSHOT</qualifier>
         <maven>3.9.9</maven>
         <maven.version>3.9.9</maven.version>
-        <tycho-version>4.0.9</tycho-version>
+        <tycho-version>4.0.13</tycho-version>
         <!--suppress UnresolvedMavenProperty -->
         <tycho.extras.version>${tycho.version}</tycho.extras.version>
         <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-epp-common.git</tycho.scmUrl>
@@ -71,7 +71,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.source>17</maven.compiler.source>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2024-09</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2025-06</eclipse.release.repository>
 
         <surefire-version>3.5.1</surefire-version>
 

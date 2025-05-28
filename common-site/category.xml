@@ -287,6 +287,7 @@
    <bundle id="com.google.http-client.google-http-client-jackson2.source"/>
    <bundle id="org.eclipse.emfcloud.emfjson-jackson"/>
    <bundle id="org.eclipse.emfcloud.emfjson-jackson.source"/>
+   <bundle id="org.eclipse.lsp4e.debug"/>
 
    <feature id="org.eclipse.emf.emfatic"/>
 
