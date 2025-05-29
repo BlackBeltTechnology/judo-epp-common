@@ -288,7 +288,13 @@
    <bundle id="org.eclipse.emfcloud.emfjson-jackson"/>
    <bundle id="org.eclipse.emfcloud.emfjson-jackson.source"/>
    <bundle id="org.eclipse.lsp4e.debug"/>
-
+   <bundle id="org.commonmark"/>
+   <bundle id="org.commonmark-gfm-strikethrough"/>
+   <bundle id="org.commonmark-gfm-tables"/>
+   <bundle id="org.commonmark-image-attributes"/>
+   <bundle id="org.commonmark-heading-anchor"/>
+   <bundle id="org.commonmark-ins"/>
+   <bundle id="org.commonmark-yaml-front-matter"/>
    <feature id="org.eclipse.emf.emfatic"/>
 
 <!--
