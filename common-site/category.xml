@@ -287,12 +287,26 @@
    <bundle id="com.google.http-client.google-http-client-jackson2.source"/>
    <bundle id="org.eclipse.emfcloud.emfjson-jackson"/>
    <bundle id="org.eclipse.emfcloud.emfjson-jackson.source"/>
-
+   <bundle id="org.eclipse.lsp4e.debug"/>
+   <bundle id="org.commonmark"/>
+   <bundle id="org.commonmark-gfm-strikethrough"/>
+   <bundle id="org.commonmark-gfm-tables"/>
+   <bundle id="org.commonmark-image-attributes"/>
+   <bundle id="org.commonmark-heading-anchor"/>
+   <bundle id="org.commonmark-ins"/>
+   <bundle id="org.commonmark-yaml-front-matter"/>
    <feature id="org.eclipse.emf.emfatic"/>
 
-<!--
-   <bundle id="org.slf4j.api"/>
--->
+   <feature id="org.eclipse.ecf.core.ssl.feature"/>
+   <feature id="org.eclipse.ecf.filetransfer.feature"/>
+   <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
+   <feature id="org.eclipse.ecf.core.ssl.feature.source"/>
+   <feature id="org.eclipse.ecf.filetransfer.feature.source"/>
+   <feature id="org.eclipse.ecf.filetransfer.ssl.feature.source"/>
+
+   <!--
+      <bundle id="org.slf4j.api"/>
+   -->
    <!--
    <feature id="org.eclipse.linuxtools.docker.feature"/>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature"/>

@@ -55,11 +55,11 @@
     </developers>
     
     <properties>
-        <revision>4.33.0-SNAPSHOT</revision>
+        <revision>4.35.0-SNAPSHOT</revision>
         <qualifier>-SNAPSHOT</qualifier>
         <maven>3.9.9</maven>
         <maven.version>3.9.9</maven.version>
-        <tycho-version>4.0.9</tycho-version>
+        <tycho-version>4.0.13</tycho-version>
         <!--suppress UnresolvedMavenProperty -->
         <tycho.extras.version>${tycho.version}</tycho.extras.version>
         <tycho.scmUrl>scm:git:https://github.com/BlackBeltTechnology/judo-epp-common.git</tycho.scmUrl>
@@ -68,10 +68,10 @@
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <build>${maven.build.timestamp}</build>
         
-        <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2024-09</eclipse.release.repository>
+        <eclipse.release.repository>https://download.eclipse.org/releases/2025-06</eclipse.release.repository>
 
         <surefire-version>3.5.1</surefire-version>
 
@@ -119,9 +119,24 @@
 
         <repository>
             <id>eclipse-release</id>
-            <url>https://download.eclipse.org/releases/2024-09</url>
+            <url>https://download.eclipse.org/releases/2025-03</url>
             <layout>p2</layout>
         </repository>
+
+        <repository>
+            <id>eclipse-orbit-simrel</id>
+            <url>https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.35.0</url>
+            <layout>p2</layout>
+        </repository>
+
+        <repository>
+            <id>eclipse-ecf</id>
+            <url>https://download.eclipse.org/rt/ecf/latest/site.p2/3.16.2.v20250528-1917/</url>
+            <layout>p2</layout>
+        </repository>
+
+
+
 
 
         <!--
@@ -154,7 +169,7 @@
         -->
         <repository>
             <id>eclipse-sirius-release</id>
-            <url>https://download.eclipse.org/sirius/updates/releases/7.4.4/2023-03/</url>
+            <url>https://download.eclipse.org/sirius/updates/releases/7.4.10/2023-03</url>
             <layout>p2</layout>
         </repository>
 
