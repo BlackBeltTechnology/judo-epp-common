@@ -297,9 +297,16 @@
    <bundle id="org.commonmark-yaml-front-matter"/>
    <feature id="org.eclipse.emf.emfatic"/>
 
-<!--
-   <bundle id="org.slf4j.api"/>
--->
+   <feature id="org.eclipse.ecf.core.ssl.feature"/>
+   <feature id="org.eclipse.ecf.filetransfer.feature"/>
+   <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
+   <feature id="org.eclipse.ecf.core.ssl.feature.source"/>
+   <feature id="org.eclipse.ecf.filetransfer.feature.source"/>
+   <feature id="org.eclipse.ecf.filetransfer.ssl.feature.source"/>
+
+   <!--
+      <bundle id="org.slf4j.api"/>
+   -->
    <!--
    <feature id="org.eclipse.linuxtools.docker.feature"/>
    <feature id="org.eclipse.linuxtools.docker.editor.ls.feature"/>
