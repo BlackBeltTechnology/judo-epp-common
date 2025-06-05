@@ -71,8 +71,6 @@
         <maven.compiler.target>21</maven.compiler.target>
         <maven.compiler.source>21</maven.compiler.source>
         
-        <eclipse.release.repository>https://download.eclipse.org/releases/2025-06</eclipse.release.repository>
-
         <surefire-version>3.5.1</surefire-version>
 
         <!--suppress UnresolvedMavenProperty -->
