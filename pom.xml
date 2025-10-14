@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
     <name>Judo Eclipse Packaging Project (EPP) common parent</name>
@@ -107,36 +105,27 @@
         </pluginRepository>
     </pluginRepositories>
     -->
-
     <repositories>
         <repository>
             <id>eclipse-licenser</id>
             <url>https://download.eclipse.org/cbi/updates/license</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>eclipse-release</id>
             <url>https://download.eclipse.org/releases/2025-03</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>eclipse-orbit-simrel</id>
             <url>https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/release/4.35.0</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>eclipse-ecf</id>
             <url>https://download.eclipse.org/rt/ecf/latest/site.p2/3.16.2.v20250528-1917/</url>
             <layout>p2</layout>
         </repository>
-
-
-
-
-
         <!--
         <repository>
             <id>eclipse-amalgam</id>
@@ -144,13 +133,11 @@
             <layout>p2</layout>
         </repository>
         -->
-
         <repository>
             <id>eclipse-ecoretools</id>
             <url>https://download.eclipse.org/ecoretools/updates/releases/3.4.0/2021-06</url>
             <layout>p2</layout>
         </repository>
-
         <!--
 		<repository>	
             <id>gmf</id>
@@ -170,7 +157,6 @@
             <url>https://download.eclipse.org/sirius/updates/releases/7.4.10/2023-03</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>eclipse-m2e</id>
             <url>https://download.eclipse.org/technology/m2e/releases/2.6.1/</url>
@@ -200,37 +186,31 @@
             <url>https://download.eclipse.org/emfatic/update/</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>asciidoctor</id>
             <url>https://de-jcup.github.io/update-site-eclipse-asciidoctor-editor/update-site/</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>color-console</id>
             <url>https://www.mihai-nita.net/eclipse</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>eclipse-orbit</id>
             <url>https://download.eclipse.org/oomph/simrel-orbit/2023-09/</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>eclipse-orbit-drop</id>
             <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>plantuml</id>
             <url>https://hallvard.github.io/plantuml</url>
             <layout>p2</layout>
         </repository>
-
         <repository>
             <id>emfjson-jackson</id>
             <url>https://download.eclipse.org/emfcloud/emfjson-jackson/p2/releases/2.2.0/</url>
@@ -243,8 +223,17 @@
             <layout>p2</layout>
         </repository>
         -->
+        <repository>
+            <id>judong</id>
+            <url>https://repository.judo.technology/repository/maven-judong/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
     </repositories>
- 
     <build>
         <plugins>
             
@@ -336,8 +325,7 @@
                     <flattenMode>resolveCiFriendliesOnly</flattenMode>
                     <pomElements>
                         <dependencies>flatten</dependencies>
-                        <repositories>flatten</repositories>
-                    </pomElements>
+                        <repositories>flatten</repositories></pomElements>
                 </configuration>
                 <executions>
                     <execution>
@@ -489,7 +477,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore></ignore>
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -508,7 +496,7 @@
                                 		</goals>
                                 	</pluginExecutionFilter>
                                 	<action>
-                                		<ignore></ignore>
+                                		<ignore/>
                                 	</action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -676,14 +664,14 @@
 			<id>release-judong</id>
 			<distributionManagement>
 				<snapshotRepository>
-					<id>judong-nexus-distribution</id>
+					<id>judong-distribution</id>
 					<!--suppress UnresolvedMavenProperty -->
-					<url>https://nexus.judo.technology/repository/maven-judong-snapshots/</url>
+					<url>https://repository.judo.technology/repository/maven-judong-upstream/</url>
 				</snapshotRepository>
 				<repository>
-					<id>judong-nexus-distribution</id>
+					<id>judong-distribution</id>
 					<!--suppress UnresolvedMavenProperty -->
-					<url>https://nexus.judo.technology/repository/maven-judong-snapshots/</url>
+					<url>https://repository.judo.technology/repository/maven-judong-upstream/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
