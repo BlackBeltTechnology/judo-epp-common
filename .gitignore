@@ -57,3 +57,7 @@ wercker.env
 .release
 /**/.flattened-pom.xml
 /**/.tycho-consumer-pom.xml
+.claude
+.gemini
+.opencode
+.agent
