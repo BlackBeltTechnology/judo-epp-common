@@ -1,0 +1,30 @@
+# JUDO EPP Common
+
+> JUDO Eclipse Packaging Project (EPP) Common assembles a curated P2 update site of Eclipse features and provides a common OSGi plugin bundle for building JUDO Eclipse-based products.
+
+Key facts:
+- Java 21, Maven 3.9.9 with Tycho 4.0.13
+- Eclipse/OSGi project using P2 repositories (not Maven Central)
+- 3 modules: plugin, feature, and P2 repository site
+- Aggregates 100+ Eclipse features (EMF, Sirius, Xtext, JDT, EGit, M2E, DataTools, etc.)
+- Targets 5 platforms: Linux x86_64/aarch64, Windows x86_64, macOS x86_64/aarch64
+- License: Eclipse Public License 2.0 (EPL-2.0)
+
+## Docs
+
+- [README.md](README.md): Project overview, module descriptions, build commands, and architecture diagrams
+- [AGENTS.md](AGENTS.md): Developer guide with build commands, directory structure, and coding conventions
+- [CONTRIBUTING.md](CONTRIBUTING.md): Setup instructions and contribution guidelines
+- [.github/CIFLOW.md](.github/CIFLOW.md): CI/CD pipeline details, branching strategy, and version numbering
+
+## Modules
+
+- [common/META-INF/MANIFEST.MF](common/META-INF/MANIFEST.MF): OSGi plugin bundle — contains ContributeHandler, splash screens, icons, and branding resources
+- [common-feature/feature.xml](common-feature/feature.xml): Eclipse feature — bundles the common plugin with Eclipse Platform, M2E Logback, and M2E PDE
+- [common-site/category.xml](common-site/category.xml): P2 update site — aggregates all features into a single installable repository
+
+## Optional
+
+- [pom.xml](pom.xml): Parent POM with P2 repository URLs, Tycho configuration, build profiles, and plugin management
+- [.github/workflows/build.yml](.github/workflows/build.yml): CI/CD build pipeline
+- [LICENSE.txt](LICENSE.txt): EPL-2.0 license text
